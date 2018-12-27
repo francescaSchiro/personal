@@ -15,4 +15,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] set up routes
 - [ ] animate logo FS
 - [ ] install Material UI ? 
-- [ ] redux? 
+- [ ] redux?  
