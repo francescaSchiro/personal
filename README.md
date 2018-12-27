@@ -1,14 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ---
-# To start: 
+# To install it and run : 
 - `yarn` to install dependencies;
 
 - `yarn start` to start app locally.
 
 ---
 
-- [ ] install styled-components
+- [x] install styled-components
 - [ ] set up theme folder
 - [ ] set up scaffolding (components and containers)
 - [ ] install react-router
@@ -16,3 +16,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] animate logo FS
 - [ ] install Material UI ? 
 - [ ] redux?  
+- [ ] fullpage.js ?
+- [ ] [Normalize.css](http://necolas.github.io/normalize.css/)
+- [ ] Prettier ?
+
+why can't make automatic imports??
