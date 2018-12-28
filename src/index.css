@@ -1,16 +1,30 @@
-/*
-	HTML5 Reset :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
+/*------ Custom CSS Variables -------*/
 
-	Eric Meyer					:: https://meyerweb.com
-	HTML5 Doctor				:: https://html5doctor.com
-	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+/*------Import Google Fonts ------------*/
+@import url("https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 
--------------------------------------------------------------------------------*/
+:root {
+	--red: #F78888;
+	--yellow: #F3D250;
+	--white: #ECECEC;
+	--lightBlue: #90CCF4;
+	--blue: #5DA2D5;
 
-/* Let's default this puppy out
--------------------------------------------------------------------------------*/
+	--black: #000000;
+	--pink: #EC576B;
+	--aqua: #4EC5C1;
+	--lime: #E5E338;
+
+	--c: #43C0F6;
+	--m: #F81B84;
+	--y: #F5CE28;
+	--k: #000000;
+	--beige: #F2EEE2;
+	
+}
+/*------RESET------------*/
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
 	margin: 0;
@@ -19,14 +33,11 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 	font-size: 100%;
 	font-weight: normal;
 	vertical-align: baseline;
-  background: transparent;
-
-  /* from create-react app */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	
+	scroll-behavior: smooth;
+
 }
 
 article, aside, figure, footer, header, nav, section, details, summary {display: block;}
@@ -43,30 +54,14 @@ html {
 	box-sizing: inherit;
 }
 
-/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
-
-/* Responsive images and other embedded objects
-*/
 img,
 object,
 embed {max-width: 100%;}
 
-/*
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
-	 In fact, it *will* cause problems with Google Maps' controls at small size.
-	If this is the case for you, try uncommenting the following:
-
-#map img {
-		max-width: none;
-}
-*/
-
 /* force a vertical scrollbar to prevent a jumpy page */
 html {overflow-y: scroll;}
 
-/* we use a lot of ULs that aren't bulleted.
-	don't forget to restore the bullets within content. */
-ul {list-style: none;}
+ol, ul {list-style: none;}
 
 blockquote, q {quotes: none;}
 
@@ -80,11 +75,6 @@ a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background:
 del {text-decoration: line-through;}
 
 abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
-
-/* tables still need cellspacing="0" in the markup */
-table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
-td {font-weight: normal; vertical-align: top;}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
@@ -138,19 +128,137 @@ input[type=button] {width: auto; overflow: visible;}
 /* scale images in IE7 more attractively */
 .ie7 img {-ms-interpolation-mode: bicubic;}
 
-/* prevent BG image flicker upon hover
-   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
-.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
-*/
-
 /* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
 
 /* from create react app */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+a:focus {
+	text-decoration: none;
+  }
+
+/* ------------ GENERAL --------------- 
+
+body {
+	font: 100% "Product Sans", sans-serif;
+	color:black;
+	background-color:white;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga' on;
+	-moz-font-feature-settings: "liga" on;
+	line-height: 1;
+  }
+
+  h2, h3 {
+	font-size: 120px;
+	line-height: 150px;
+	font-weight: 700;
+	margin-bottom: 75px;
+	margin-left: -7px;
+  }
+  
+@media screen and (max-width: 1199px) {
+	h2, h3 {
+	  font-size: 100px;
+	  line-height: 120px;
+	}
+  }
+  
+  @media screen and (max-width: 991px) {
+	h2, h3 {
+	  font-size: 80px;
+	  line-height: 100px;
+	}
+  }
+  
+  @media screen and (max-width: 600px) {
+	h2, h3 {
+	  margin-bottom: 50px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	h2, h3 {
+	  font-size: 60px;
+	  line-height: 70px;
+	  margin-left: -2px;
+	}
+  }
+  
+  @media screen and (max-width: 380px) {
+	h2, h3 {
+	  font-size: 50px;
+	  line-height: 60px;
+	}
+  }
+  
+  h4 {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 700;
+	margin-bottom: 25px;
+  }
+ */
+  /* Roboto monospace? and Rubik combo?
+p {
+	font-family: "Inconsolata", monospace; 
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 38px;
+	transition: color .4s ease;
+	color: rgba(255, 255, 255, 0.8);
+  }
+   */
+/* core classes */
+/*
+::-moz-selection {
+	background: var(--lightBlue);
+	color: white;
+  }
+  
+  ::selection {
+	background: var(--lightBlue);
+	color: white;
+  }
+*/
+	/* other shortcodes */
+	/* 
+.z-index {
+	position: relative;
+	z-index: 10 !important;
+  }
+
+  .img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }
+  
+  
+.img-full {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .not-visible {
+	visibility: hidden;
+	max-height: 0px;
+  }
+  
+  .visible {
+	visibility: visible;
+	max-height: auto;
+  }
+  
+  .no-scroll {
+	overflow: hidden;
+  }
+  */
+  /*-------ANIMATIONS ----------*/
