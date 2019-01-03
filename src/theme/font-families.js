@@ -1,3 +1,4 @@
 export default {
-    default: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+    titles: '"Product Sans", sans-serif',
+    paragraph: '"Helvetica Neue", Helvetica, Arial, sans-serif'
   };  

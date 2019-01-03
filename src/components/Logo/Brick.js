@@ -1,6 +1,8 @@
 import styled, { keyframes, css } from 'styled-components';
 
-import { bricksCommon } from '../../shared';
+const getPseudoBgColor = (props) => (
+  props.theme.color.backgroundColor
+);
 
 function animation(props) {
   return keyframes`
@@ -14,7 +16,7 @@ function animation(props) {
     transform: translateX(${props.b}px);
   }
       40% {
-      transform: translateX(${props.a}px);
+      transform: translateX(${props.b}px);
       }
 
   60% {
@@ -34,15 +36,50 @@ function animation(props) {
 }
 
 const Brick = styled.div`
-  ${bricksCommon}
-  background-color: ${props => props.bg};
-
- animation: ${props => css`
+  animation: ${props => css`
     ${animation(props)} 4s cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
-    `};
+  `};
 
+  /* commons */
+  /* height: 50px; */
+  width: 100px;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  /* border-radius: 2px; */
+
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: -300px;
+    height: 56px;
+    width: 300px;
+    overflow: hidden;
+
+    background-color: ${getPseudoBgColor};
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: -300px;
+    height: 56px;
+    width: 300px;
+    overflow-x: hidden;
+    
+    background-color: ${getPseudoBgColor};
+  }
+
+  will-change: transform;
 `;
 
 export default Brick;
+
+
+
 
 // https://github.com/styled-components/styled-components/issues/397

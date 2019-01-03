@@ -5,7 +5,8 @@ import Wrapper from './Wrapper';
 const Home = () => (
   <Wrapper>
     <Logo />
-    Home
+    <h1>Francesca Schiro</h1>
+    <h3>Front End & Graphic Designer</h3>
   </Wrapper>
 );
 
