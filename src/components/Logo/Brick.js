@@ -1,6 +1,6 @@
 import styled, { keyframes, css } from 'styled-components';
 
-import { bricksCommon } from '../../utils';
+import { bricksCommon } from '../../shared';
 
 function animation(props) {
   return keyframes`

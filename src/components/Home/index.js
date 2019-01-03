@@ -4,7 +4,8 @@ import Wrapper from './Wrapper';
 
 const Home = () => (
   <Wrapper>
-    <Logo>Home</Logo>
+    <Logo />
+    Home
   </Wrapper>
 );
 

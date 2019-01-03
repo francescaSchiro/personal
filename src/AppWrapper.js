@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const AppWrapper = styled.div`
   height: 100vh;
 
-  background-color: var(--white);
+  background-color: ${props=> props.theme.color.backgroundColor};
+  color: ${props=> props.theme.color.fontColor};
+
   border: 2px solid green;
 
   scroll-snap-type: mandatory;
