@@ -1,46 +1,48 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
+import { bricksCommon } from '../../utils';
 
-import { bricksCommon, bricksAnimation } from '../../utils';
+function animation(props) {
+  return keyframes`
+  0%{
+    transform: translateX(${props.a}px);
+  }
+      10%{
+      transform: translateX(${props.a}px);
+      }
+  20% {
+    transform: translateX(${props.b}px);
+  }
+      40% {
+      transform: translateX(${props.a}px);
+      }
+
+  60% {
+    transform: translateX(${props.c}px);
+  }
+      80% {
+      transform: translateX(${props.c}px);
+      }
+  
+  90% {
+    transform: translateX(${props.d}px);
+  }
+      100% {
+    transform: translateX(${props.d}px);
+  }
+`;
+}
 
 const Brick = styled.div`
   ${bricksCommon}
-  background-color: ${props=> props.bg};
+  background-color: ${props => props.bg};
 
-  https://github.com/styled-components/styled-components/issues/397
-
-  ${
-  `@keyframes translateBricks {
-    0%{
-      transform: translateX( ${props=> props.par1}px);
-    }
-        10%{
-        transform: translateX(${props=> props.par1}px);
-        }
-    20% {
-      transform: translateX(${props=> props.par2}px);
-    }
-        40% {
-        transform: translateX(${props=> props.par1}px);
-        }
-
-    60% {
-      transform: translateX(${props=> props.par3}px);
-    }
-        80% {
-        transform: translateX(${props=> props.par3}px);
-        }
-    
-    90% {
-      transform: translateX(${props=> props.par4}px);
-    }
-        100% {
-      transform: translateX(${props=> props.par4}px);
-    }`}
- 
+ animation: ${props => css`
+    ${animation(props)} 4s cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
+    `};
 
 `;
 
 export default Brick;
 
-// ${bricksAnimation( props => (props.par1, props.par2, props.par3, props.par4))}
+// https://github.com/styled-components/styled-components/issues/397

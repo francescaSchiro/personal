@@ -6,7 +6,7 @@ import Brick from './Brick';
 const Logo = () => (
   <Wrapper>
     {/* <BackgroundImg> */}
-      <Brick par1={0} par2={40} par3={-40} par4={0} bg={'blue'}>1</Brick>
+      <Brick a={0} b={40} c={-40} d={0} bg={'blue'}>1</Brick>
       <Brick >2</Brick>
       <Brick >3</Brick>
       <Brick >4</Brick>

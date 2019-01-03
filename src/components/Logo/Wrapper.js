@@ -12,9 +12,9 @@ const Wrapper = styled.div`
   border: 2px solid rebeccapurple;
   height: 275px;
   width: 300px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png');
+  /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/280px-Tux.svg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 `;
 
 export default Wrapper;
