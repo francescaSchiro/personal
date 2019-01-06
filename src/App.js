@@ -47,7 +47,7 @@ class App extends Component {
         <React.Fragment>
           <GlobalStyles />
           <AppWrapper>
-            <NavWrapper>
+            <NavWrapper id="navbar" isGradientWhite={disabledDefault}>
               <NavItemsWrapper>
                 <NavItem onClick={() => scrollToSection(".homeSection")}>
                   Home /{" "}

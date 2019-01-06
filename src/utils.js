@@ -9,6 +9,10 @@ export const scrollToSection = classname => {
   });
 };
 
+export const getMobileBreakpoint = () => {
+  return "375px";
+};
+
 // ONLY NEED THIS if I want to make tsx files with theme interfaces. for now nope.
 // import { themes } from "./theme/index";
 

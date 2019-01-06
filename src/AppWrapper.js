@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const AppWrapper = styled.div`
   height: 100vh;
 
-  background-color: ${props=> props.theme.color.backgroundColor};
-  color: ${props=> props.theme.color.fontColor};
+  background-color: ${props => props.theme.color.backgroundColor};
+  color: ${props => props.theme.color.fontColor};
 
   border: 2px solid green;
 

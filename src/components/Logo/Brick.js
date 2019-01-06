@@ -1,8 +1,6 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes, css } from "styled-components";
 
-const getPseudoBgColor = (props) => (
-  props.theme.color.backgroundColor
-);
+const getPseudoBgColor = props => props.theme.color.backgroundColor;
 
 function animation(props) {
   return keyframes`
@@ -41,7 +39,7 @@ const Brick = styled.div`
   `};
 
   /* commons */
-  /* height: 50px; */
+  height: 50px;
   width: 100px;
   background-color: transparent;
   position: relative;
@@ -53,7 +51,7 @@ const Brick = styled.div`
   /* border-radius: 2px; */
 
   &:after {
-    content: '';
+    content: "";
     display: inline-block;
     position: absolute;
     right: -300px;
@@ -64,13 +62,13 @@ const Brick = styled.div`
     background-color: ${getPseudoBgColor};
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: -300px;
     height: 56px;
     width: 300px;
     overflow-x: hidden;
-    
+
     background-color: ${getPseudoBgColor};
   }
 
@@ -78,8 +76,5 @@ const Brick = styled.div`
 `;
 
 export default Brick;
-
-
-
 
 // https://github.com/styled-components/styled-components/issues/397
