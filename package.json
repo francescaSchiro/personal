@@ -10,7 +10,7 @@
     "react-scripts": "2.1.2",
     "styled-components": "^4.1.3"
   },
-  "homepage": "https://francescaSchiro.github.io/personal/public",
+  "homepage": "https://francescaSchiro.github.io/personal",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
