@@ -1,15 +1,22 @@
-import React, { Component } from 'react';
-import AppWrapper from './AppWrapper';
-import Nav from './components/Nav/Wrapper';
-import Home from './components/Home';
-import About from './components/About/';
-import Works from './components/Works/';
-import Contacts from './components/Contacts/';
-import { ThemeProvider } from './theme';
-import GlobalStyles from './theme/GlobalStyle';
+import React, { Component } from "react";
+import { ThemeProvider } from "./theme";
+import GlobalStyles from "./theme/GlobalStyle";
+
+import { themes } from "./theme/index";
+import { scrollToSection } from "./utils";
+
+import AppWrapper from "./AppWrapper";
+import NavWrapper from "./components/Nav/NavWrapper";
+import NavItem from "./components/Nav/NavItem";
+import NavItemsWrapper from "./components/Nav/NavItemsWrapper";
+import ButtonsWrapper from "./components/Nav/ButtonsWrapper";
+import ButtonTheme from "./components/Nav/ButtonTheme";
+import Home from "./components/Home";
+import About from "./components/About/";
+import Works from "./components/Works/";
+import Contacts from "./components/Contacts/";
 
 // import { getThemeByName } from './utils';
-import { themes } from './theme/index';
 
 class App extends Component {
   constructor(props) {
@@ -40,28 +47,36 @@ class App extends Component {
         <React.Fragment>
           <GlobalStyles />
           <AppWrapper>
-            <Nav>
-              <div>
-                <span>Home / </span>
-                <span>About / </span>
-                <span>Works / </span>
-                <span>Contacts</span>
-              </div>
-              <div>
-                <button
+            <NavWrapper>
+              <NavItemsWrapper>
+                <NavItem onClick={() => scrollToSection(".homeSection")}>
+                  Home /{" "}
+                </NavItem>
+                <NavItem onClick={() => scrollToSection(".aboutSection")}>
+                  About /{" "}
+                </NavItem>
+                <NavItem onClick={() => scrollToSection(".worksSection")}>
+                  Works /
+                </NavItem>
+                <NavItem onClick={() => scrollToSection(".contactsSection")}>
+                  Contacts
+                </NavItem>
+              </NavItemsWrapper>
+              <ButtonsWrapper>
+                <ButtonTheme
                   onClick={this.switchToDefaultTheme}
                   disabled={disabledDefault}
                 >
-                  Default
-                </button>
-                <button
+                  <i className="far fa-sun" />
+                </ButtonTheme>
+                <ButtonTheme
                   onClick={this.switchToDarkTheme}
                   disabled={disabledDark}
                 >
-                  Dark
-                </button>
-              </div>
-            </Nav>
+                  <i className="far fa-moon" />
+                </ButtonTheme>
+              </ButtonsWrapper>
+            </NavWrapper>
             <Home />
             <About />
             <Works />

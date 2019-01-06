@@ -1,6 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
-
+import { createGlobalStyle } from "styled-components";
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
@@ -53,5 +51,6 @@ export default createGlobalStyle`
     html, body, #root {
      width: 100%;
      height: 100%;
+     scroll-behavior: smooth;
     }
 `;
