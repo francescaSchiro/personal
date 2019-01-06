@@ -3,8 +3,11 @@ import Logo from "../Logo";
 import Wrapper from "./Wrapper";
 import NameWrapper from "./NameWrapper";
 import Dot from "./Dot";
+import DotWrapper from "./DotWrapper";
 import H1 from "../H1";
 import H3 from "../H3";
+
+import { scrollToSection } from "../../utils";
 
 const Home = () => (
   <Wrapper className="homeSection">
@@ -13,7 +16,9 @@ const Home = () => (
       <H1>Francesca Schiro</H1>
       <H3>Front End & Graphic Designer</H3>
     </NameWrapper>
-    <Dot />
+    <DotWrapper type="button" onClick={() => scrollToSection(".aboutSection")}>
+      <Dot />
+    </DotWrapper>
   </Wrapper>
 );
 

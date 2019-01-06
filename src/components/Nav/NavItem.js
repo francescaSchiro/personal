@@ -6,7 +6,7 @@ const NavItem = styled.button`
   all: unset;
   cursor: pointer;
   margin-right: 7px;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   font-size: ${props => props.theme.font.size.l};
   /* font-weight: ${props => props.theme.font.weight.bold}; */
 

@@ -47,7 +47,7 @@ const NavWrapper = styled.div`
   left: 0;
   height: 90px;
   width: 100%;
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 
   ${props => getGradientColor(props.isGradientWhite)};
 

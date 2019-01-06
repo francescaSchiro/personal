@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   height: 100vh;
   min-height: 100%;
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   scroll-snap-align: start;
 
   display: flex;

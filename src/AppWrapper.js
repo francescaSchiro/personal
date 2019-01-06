@@ -6,7 +6,7 @@ const AppWrapper = styled.div`
   background-color: ${props => props.theme.color.backgroundColor};
   color: ${props => props.theme.color.fontColor};
 
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
   scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;

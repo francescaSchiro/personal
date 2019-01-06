@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const Dot = styled.div`
+const NameWrapper = styled.div`
   width: 100%;
 
-  margin-top: -150px;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,4 +15,4 @@ const Dot = styled.div`
   }
 `;
 
-export default Dot;
+export default NameWrapper;
