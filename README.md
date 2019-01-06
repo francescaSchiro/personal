@@ -33,8 +33,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] animate logo FS
 - [x] implement font Awesome for theme icon
 - [x] make nav items components and working anchorlinks.
-- [ ] make nav items as component rendering different css symbol based on passed prop
+- [x] make gradient animation in logo background
 - [ ] make scroll down dot in home https://www.creativebloq.com/inspiration/css-animation-examples https://codepen.io/matchboxhero/pen/gGdJYo
+- [ ] make nav items as component rendering different css symbol based on passed prop
 - [ ] hide menu on scroll down and show on scroll up
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
 - [ ] Animated Hamburger menu -> X for nav on responsive view.

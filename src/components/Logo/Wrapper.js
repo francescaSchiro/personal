@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   /*distance from nav*/
-  margin-top: 20vh;
+  margin-top: 15vh;
   /*overflow: hidden;*/
 
   /* border: 2px solid rebeccapurple; */
@@ -52,6 +52,10 @@ const Wrapper = styled.div`
     100% {
       background-position: 4% 0%;
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-top: 15vh;
   }
 `;
 
