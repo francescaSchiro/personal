@@ -3,7 +3,7 @@ import styled from "styled-components";
 const NameWrapper = styled.div`
   width: 100%;
 
-  margin-top: -100px;
+  margin-top: -80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
