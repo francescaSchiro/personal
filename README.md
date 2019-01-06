@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 # To start: 
+- `git clone https://github.com/francescaSchiro/personal.git` to clone repository;
+
+- `git checkout develop` to move to develop branch; 
+
 - `yarn` to install dependencies;
 
 - `yarn start` to start app locally.
@@ -9,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ---
 
 # Personal page project using:
+
 - styledcomponents ( ThemeProvider, GlobalStyle )
 - Font Awesome
 - Pure CSS animations ( Eg. _scroll-snap_ & _scroll-snap-align_ )
