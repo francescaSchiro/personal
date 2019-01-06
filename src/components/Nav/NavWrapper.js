@@ -49,7 +49,7 @@ const NavWrapper = styled.div`
   width: 100%;
   /* border: 2px solid greenyellow; */
 
-  ${props => getGradientColor(props.isGradientWhite)};
+  ${props => getGradientColor(props.isGradientWhite)}
 
   display: flex;
   flex-direction: row;
