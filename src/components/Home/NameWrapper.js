@@ -9,7 +9,7 @@ const NameWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 430px), screen and (min-height: 600px) {
     /* regole CSS */
     margin-top: -30px;
   }

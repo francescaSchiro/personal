@@ -6,4 +6,6 @@ export default {
     l: '14px',
     xl: '16px',
     xxl: '18px',
+    sectionTitle: '120px',
+    sectionMobile: '60px'
 };  

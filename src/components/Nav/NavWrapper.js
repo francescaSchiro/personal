@@ -38,6 +38,7 @@ const getGradientColor = isGradientWhite => {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', endColorstr='#001a1a1a',GradientType=0 );`;
   }
 };
+/* ${props => getGradientColor(props.isGradientWhite)} */
 
 const NavWrapper = styled.div`
   z-index: 100;
@@ -49,7 +50,6 @@ const NavWrapper = styled.div`
   width: 100%;
   /* border: 2px solid greenyellow; */
 
-  ${props => getGradientColor(props.isGradientWhite)}
 
   display: flex;
   flex-direction: row;

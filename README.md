@@ -58,6 +58,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] [Normalize.css](http://necolas.github.io/normalize.css/)
 - [ ] Prettier ?
 - [ ] make and update favicon.ico
+- [ ] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
 
 ---
 

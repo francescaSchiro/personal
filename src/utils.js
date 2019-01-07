@@ -13,6 +13,15 @@ export const getMobileBreakpoint = () => {
   return "375px";
 };
 
+export const getBgGradient = (a, b) => {
+  return` 
+ background: #f3d250;
+ background: -moz-linear-gradient(top, ${a} 39%, ${b} 100%);
+ background: -webkit-linear-gradient(top, ${a} 39%,${b} 100%);
+ background: linear-gradient(to bottom, ${a} 39%,${b} 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${a}', endColorstr='${b}',GradientType=0 );
+ `};
+
 // ONLY NEED THIS if I want to make tsx files with theme interfaces. for now nope.
 // import { themes } from "./theme/index";
 

@@ -10,7 +10,7 @@ import H3 from "../H3";
 import { scrollToSection } from "../../utils";
 
 const Home = () => (
-  <Wrapper className="homeSection">
+  <Wrapper className="homeSection" >
     <Logo />
     <NameWrapper>
       <H1>Francesca Schiro</H1>
