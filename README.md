@@ -37,11 +37,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] make scroll down dot in home https://www.creativebloq.com/inspiration/css-animation-examples https://codepen.io/matchboxhero/pen/gGdJYo
 - [x] try to deploy on **now** https://francescaschiro-yxfetbdmwj.now.sh/
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
-- [ ] make placeholders for no connection: (icons and system font alternatives)
-- [ ] make nav items as component rendering different css symbol based on passed prop
-- [ ] hide menu on scroll down and show on scroll up
+- [x] make free scroll (commented out css in app wrapper and sections)
+- [ ] make about section
+- [ ] make work section w/ behance link
+- [ ] make contact section
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
+- [ ] make placeholders for no connection: (icons and system font alternatives) added alt to button icons?
+- [ ] make nav items as component rendering different css symbol based on passed prop
 - [ ] Animated Hamburger menu -> X for nav on responsive view.
+- [ ] hide menu on scroll down and show on scroll up
 - [ ] ?? make symbols in nav https://altcodeunicode.com/alt-codes-geometric-shape-symbols/
 - [ ] make symbols with css https://css-tricks.com/the-shapes-of-css/
 - [ ] install react-router

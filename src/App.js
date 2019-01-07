@@ -67,13 +67,13 @@ class App extends Component {
                   onClick={this.switchToDefaultTheme}
                   disabled={disabledDefault}
                 >
-                  <i className="far fa-sun" />
+                  <i className="far fa-sun" alt="light" />
                 </ButtonTheme>
                 <ButtonTheme
                   onClick={this.switchToDarkTheme}
                   disabled={disabledDark}
                 >
-                  <i className="far fa-moon" />
+                  <i className="far fa-moon" alt="dark" />
                 </ButtonTheme>
               </ButtonsWrapper>
             </NavWrapper>

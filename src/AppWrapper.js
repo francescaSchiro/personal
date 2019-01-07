@@ -8,8 +8,8 @@ const AppWrapper = styled.div`
 
   /* border: 2px solid green; */
 
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory; */
   overflow-y: scroll;
 
   /*hide scrollbar*/
