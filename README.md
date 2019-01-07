@@ -39,8 +39,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
 - [x] make free scroll (commented out css in app wrapper and sections)
 - [ ] make about section
+- [ ] download CV link
 - [ ] make work section w/ behance link
 - [ ] make contact section
+- [ ] symbols behind on navItems hover
 - [ ] animate on scroll with https://github.com/michalsnik/aos/tree/v2
 - [ ] make icon render based on { props.isLightTheme ? 'icondarklightbulb' : 'iconLightBulbon'} no disabled. only 1 button. onClick toggle props.isLightTheme boolean value
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle

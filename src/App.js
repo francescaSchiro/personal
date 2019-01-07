@@ -49,16 +49,28 @@ class App extends Component {
           <AppWrapper>
             <NavWrapper id="navbar" isGradientWhite={disabledDefault}>
               <NavItemsWrapper>
-                <NavItem onClick={() => scrollToSection(".homeSection")}>
+                <NavItem
+                  onClick={() => scrollToSection(".homeSection")}
+                  sectionColor={"#ececec"}
+                >
                   Home /{" "}
                 </NavItem>
-                <NavItem onClick={() => scrollToSection(".aboutSection")}>
+                <NavItem
+                  onClick={() => scrollToSection(".aboutSection")}
+                  sectionColor={props => props.theme.color.yellow}
+                >
                   About /{" "}
                 </NavItem>
-                <NavItem onClick={() => scrollToSection(".worksSection")}>
+                <NavItem
+                  onClick={() => scrollToSection(".worksSection")}
+                  sectionColor={props => props.theme.color.red}
+                >
                   Works /
                 </NavItem>
-                <NavItem onClick={() => scrollToSection(".contactsSection")}>
+                <NavItem
+                  onClick={() => scrollToSection(".contactsSection")}
+                  sectionColor={props => props.theme.color.lightBlue}
+                >
                   Contacts
                 </NavItem>
               </NavItemsWrapper>

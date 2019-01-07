@@ -1,4 +1,5 @@
+// "#ECECEC"
 export default {
-  backgroundColor: "#ECECEC",
-  fontColor: "black"
+  backgroundColor: "#ffffff",
+  fontColor: "#1A1A1A"
 };
