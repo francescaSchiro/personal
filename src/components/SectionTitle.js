@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
+import { getMobileBreakpoint } from "../utils";
+
 const Sectiontitle = styled.p`
   /* margin-top: 50px; */
   border: 2px solid pink;
-  width: 100%;
+  /* width: 100%; */
 
   /* height:100%; */
   /* margin-top: 40px; */
@@ -26,6 +28,12 @@ const Sectiontitle = styled.p`
   ::selection {
     color: ${props => props.theme.color.backgroundColor};
     background: ${props => props.fontColor};
+  }
+
+  @media screen and (max-width: ${getMobileBreakpoint}) {
+    /* regole CSS */
+    font-size: ${props => props.theme.font.size.sectionMobile};
+    left: -20px;
   }
 `;
 

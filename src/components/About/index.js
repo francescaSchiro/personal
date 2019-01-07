@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle";
 const About = () => (
   <Wrapper className="aboutSection">
     <SectionTitle
-      top={"40px"}
+      top={"100px"}
       left={"-30px"}
       fontColor={props => props.theme.color.yellow}
     >
