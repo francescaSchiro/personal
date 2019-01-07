@@ -37,6 +37,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] make scroll down dot in home https://www.creativebloq.com/inspiration/css-animation-examples https://codepen.io/matchboxhero/pen/gGdJYo
 - [x] try to deploy on **now** https://francescaschiro-yxfetbdmwj.now.sh/
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
+- [ ] make placeholders for no connection: (icons and system font alternatives)
 - [ ] make nav items as component rendering different css symbol based on passed prop
 - [ ] hide menu on scroll down and show on scroll up
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
