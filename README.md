@@ -41,6 +41,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] make about section
 - [ ] make work section w/ behance link
 - [ ] make contact section
+- [ ] animate on scroll with https://github.com/michalsnik/aos/tree/v2
+- [ ] make icon render based on { props.isLightTheme ? 'icondarklightbulb' : 'iconLightBulbon'} no disabled. only 1 button. onClick toggle props.isLightTheme boolean value
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
 - [ ] make placeholders for no connection: (icons and system font alternatives) added alt to button icons?
 - [ ] make nav items as component rendering different css symbol based on passed prop
@@ -59,7 +61,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 
-why can't make automatic imports with lightbulg suggestions??
+- why can't make automatic imports with lightbulg suggestions??
+- pull nav up in browsers;
+- how can i make animation stop in the background when not into view? is it automatic?
 
 - styledcomponents ( ThemeProvider, GlobalStyle )
 - Font Awesome
