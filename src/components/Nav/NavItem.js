@@ -6,22 +6,22 @@ const NavItem = styled.div`
   all: unset;
   cursor: pointer;
   margin-right: 4px;
-  position:relative;
+  position: relative;
   /* border: 2px solid orange; */
   font-size: ${props => props.theme.font.size.xl};
-  /* font-weight: ${props => props.theme.font.weight.bold}; */
+
   &:hover {
-    &:before{
-      content:'';
-      position:absolute;
-      top:5px;
+    font-weight: ${props => props.theme.font.weight.bold};
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
       width: 100%;
       height: 80%;
       background: ${props => props.sectionColor};
-      z-index:-1;
+      z-index: -1;
     }
   }
-
 
   @media screen and (max-width: ${getMobileBreakpoint}) {
     /* regole CSS */
