@@ -35,8 +35,9 @@ function animation(props) {
 
 const Brick = styled.div`
   animation: ${props => css`
-    ${animation(props)} 4s cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
+    ${animation(props)} 6s cubic-bezier(0.65, -0.55, 0.25, 1.5) infinite
   `};
+  animation-delay: 1s;
 
   /* commons */
   height: 50px;

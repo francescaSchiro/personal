@@ -5,10 +5,10 @@ import { getMobileBreakpoint } from "../../utils";
 const NavItem = styled.div`
   all: unset;
   cursor: pointer;
-  margin-right: 7px;
+  margin-right: 4px;
   position:relative;
   /* border: 2px solid orange; */
-  font-size: ${props => props.theme.font.size.l};
+  font-size: ${props => props.theme.font.size.xl};
   /* font-weight: ${props => props.theme.font.weight.bold}; */
   &:hover {
     &:before{
@@ -25,7 +25,7 @@ const NavItem = styled.div`
 
   @media screen and (max-width: ${getMobileBreakpoint}) {
     /* regole CSS */
-    font-size: ${props => props.theme.font.size.m};
+    font-size: ${props => props.theme.font.size.l};
   }
 `;
 

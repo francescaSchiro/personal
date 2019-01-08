@@ -6,7 +6,7 @@ const NavItemsWrapper = styled.div`
   align-items: center;
   height: 100%;
   /* border: 2px solid red; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: ${props => props.theme.font.family.paragraph};
 `;
 

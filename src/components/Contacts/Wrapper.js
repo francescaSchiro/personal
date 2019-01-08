@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // import { getBgGradient } from '../../utils';
 /* ${props => getBgGradient(props.theme.color.blue, props.theme.color.backgroundColor)}; */
@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   /* scroll-snap-align: start; */
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   align-items: center;
 `;
 
