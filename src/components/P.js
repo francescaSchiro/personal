@@ -18,12 +18,12 @@ const P = styled.p`
   ::-moz-selection {
     /* Code for Firefox */
     color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    background: ${props => props.sectionColor};
   }
 
   ::selection {
     color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    background: ${props => props.sectionColor};
   }
 `;
 

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const H3 = styled.p`
   margin-top: 16px;
@@ -8,13 +8,13 @@ const H3 = styled.p`
 
   ::-moz-selection {
     /* Code for Firefox */
-    color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    color: ${props => props.theme.color.darkGray};
+    background: ${props => props.sectionColor};
   }
 
   ::selection {
-    color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    color: ${props => props.theme.color.darkGray};
+    background: ${props => props.sectionColor};
   }
 `;
 

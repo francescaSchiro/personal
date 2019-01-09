@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import { ThemeProvider } from "./theme";
-import GlobalStyles from "./theme/GlobalStyle";
+import React, { Component } from 'react';
+import { ThemeProvider } from './theme';
+import GlobalStyles from './theme/GlobalStyle';
 
-import { themes } from "./theme/index";
-import { scrollToSection } from "./utils";
+import { themes } from './theme/index';
+import { scrollToSection } from './utils';
 
-import AppWrapper from "./AppWrapper";
-import NavWrapper from "./components/Nav/NavWrapper";
-import NavItem from "./components/Nav/NavItem";
-import NavItemsWrapper from "./components/Nav/NavItemsWrapper";
-import ButtonsWrapper from "./components/Nav/ButtonsWrapper";
-import ButtonTheme from "./components/Nav/ButtonTheme";
-import Home from "./components/Home";
-import About from "./components/About/";
-import Works from "./components/Works/";
-import Contacts from "./components/Contacts/";
+import AppWrapper from './AppWrapper';
+import NavWrapper from './components/Nav/NavWrapper';
+import NavItem from './components/Nav/NavItem';
+import NavItemsWrapper from './components/Nav/NavItemsWrapper';
+import ButtonsWrapper from './components/Nav/ButtonsWrapper';
+import ButtonTheme from './components/Nav/ButtonTheme';
+import Home from './components/Home';
+import About from './components/About/';
+import Works from './components/Works/';
+import Contacts from './components/Contacts/';
 
 // import { getThemeByName } from './utils';
 
@@ -23,70 +23,68 @@ class App extends Component {
     super(props);
     this.state = {
       theme: themes.DefaultTheme,
-      disabledDefault: true,
-      disabledDark: false
+      lightIcon: true,
     };
   }
   switchToDefaultTheme = () =>
     this.setState({
       theme: themes.DefaultTheme,
-      disabledDefault: true,
-      disabledDark: false
+      lightIcon: true,
     });
   switchToDarkTheme = () =>
     this.setState({
       theme: themes.DarkTheme,
-      disabledDefault: false,
-      disabledDark: true
+      lightIcon: false,
     });
 
   render() {
-    const { theme, disabledDefault, disabledDark } = this.state;
+    const { theme, lightIcon } = this.state;
     return (
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <GlobalStyles />
           <AppWrapper>
-            <NavWrapper id="navbar" isGradientWhite={disabledDefault}>
+            <NavWrapper id='navbar' isGradientWhite={lightIcon}>
               <NavItemsWrapper>
                 <NavItem
-                  onClick={() => scrollToSection(".homeSection")}
-                  sectionColor={"#ececec"}
+                  onClick={() => scrollToSection('.homeSection')}
+                  sectionColor={props => props.theme.color.gray}
                 >
                   Home /
                 </NavItem>
                 <NavItem
-                  onClick={() => scrollToSection(".aboutSection")}
+                  onClick={() => scrollToSection('.aboutSection')}
                   sectionColor={props => props.theme.color.yellow}
                 >
                   About /
                 </NavItem>
                 <NavItem
-                  onClick={() => scrollToSection(".worksSection")}
+                  onClick={() => scrollToSection('.worksSection')}
                   sectionColor={props => props.theme.color.red}
                 >
                   Works /
                 </NavItem>
                 <NavItem
-                  onClick={() => scrollToSection(".contactsSection")}
+                  onClick={() => scrollToSection('.contactsSection')}
                   sectionColor={props => props.theme.color.lightBlue}
                 >
                   Contacts /
                 </NavItem>
               </NavItemsWrapper>
               <ButtonsWrapper>
-                <ButtonTheme
-                  onClick={this.switchToDefaultTheme}
-                  disabled={disabledDefault}
-                >
-                  <i className="far fa-sun" alt="light" />
-                </ButtonTheme>
-                <ButtonTheme
-                  onClick={this.switchToDarkTheme}
-                  disabled={disabledDark}
-                >
-                  <i className="far fa-moon" alt="dark" />
-                </ButtonTheme>
+                {lightIcon ? (
+                  <ButtonTheme
+                    onClick={this.switchToDarkTheme}
+                  >
+                    <i className='far fa-moon' alt='dark' />
+                  </ButtonTheme>
+                ) : (
+                  <ButtonTheme
+                    onClick={this.switchToDefaultTheme}
+                  >
+                    <i className='far fa-sun' alt='light' />
+                  </ButtonTheme>
+                )}
               </ButtonsWrapper>
             </NavWrapper>
             <Home />

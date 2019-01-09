@@ -13,13 +13,13 @@ const About = () => (
       <SectionTitle
         // top={"100px"}
         // left={"-30px"}
-        fontColor={props => props.theme.color.yellow}
+        sectionColor={props => props.theme.color.yellow}
       >
         About
       </SectionTitle>
     </SectionTitleContainer>
     <PContainer>
-      <P>
+      <P  sectionColor={props => props.theme.color.yellow}>
         {" "}
         Ciao. <br />
         My Name is Francesca,

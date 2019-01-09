@@ -7,8 +7,9 @@ const Sectiontitle = styled.p`
   /* width: 100%; */
 
   /* height:100%; */
-  margin-bottom: 25%;
+  margin-top: 90px;
   margin-right: -20px;
+
   /* padding: 40px; */
   font-family: ${props => props.theme.font.family.titles};
   font-size: 20vw;

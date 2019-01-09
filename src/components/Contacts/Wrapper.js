@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   /* scroll-snap-align: start; */
   height: 100vh;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 `;

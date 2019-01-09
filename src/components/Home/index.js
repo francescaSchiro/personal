@@ -13,8 +13,8 @@ const Home = () => (
   <Wrapper className="homeSection" >
     <Logo />
     <NameWrapper>
-      <H1>Francesca Schiro</H1>
-      <H3>Front End & Graphic Designer</H3>
+      <H1 sectionColor={props=> props.theme.color.gray}>Francesca Schiro</H1>
+      <H3 sectionColor={props=> props.theme.color.gray}>Front End & Graphic Designer</H3>
     </NameWrapper>
     <DotWrapper type="button" onClick={() => scrollToSection(".aboutSection")}>
       <Dot />

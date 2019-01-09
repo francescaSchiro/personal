@@ -9,13 +9,13 @@ const H1 = styled.p`
 
   ::-moz-selection {
     /* Code for Firefox */
-    color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    color: ${props => props.theme.color.darkGray};
+    background: ${props => props.sectionColor};
   }
 
   ::selection {
-    color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.theme.color.fontColor};
+    color: ${props => props.theme.color.darkGray};
+    background: ${props => props.sectionColor};
   }
 `;
 

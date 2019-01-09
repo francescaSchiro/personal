@@ -12,7 +12,7 @@ const Sectiontitle = styled.p`
   font-family: ${props => props.theme.font.family.titles};
   font-size: 20vw;
   font-weight: ${props => props.theme.font.weight.bold};
-  color: ${props => props.fontColor};
+  color: ${props => props.sectionColor};
   /* position: absolute; */
 
   /* top: ${props => props.top};
@@ -21,12 +21,12 @@ const Sectiontitle = styled.p`
   ::-moz-selection {
     /* Code for Firefox */
     color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.fontColor};
+    background: ${props => props.sectionColor};
   }
 
   ::selection {
     color: ${props => props.theme.color.backgroundColor};
-    background: ${props => props.fontColor};
+    background: ${props => props.sectionColor};
   }
 
  

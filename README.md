@@ -54,6 +54,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] ?? make symbols in nav https://altcodeunicode.com/alt-codes-geometric-shape-symbols/
 - [ ] make symbols with css https://css-tricks.com/the-shapes-of-css/
 - [ ] install react-router
+- [ ] make selection mixin in utils getSelectionColors(bg,fg)
 - [ ] set up routes
 - [ ] 404 page
 - [ ] install Material UI ?
