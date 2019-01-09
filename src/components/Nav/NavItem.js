@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { getMobileBreakpoint } from "../../utils";
+import { getBreakpoint } from "../../utils";
 
 const NavItem = styled.div`
   all: unset;
@@ -23,7 +23,7 @@ const NavItem = styled.div`
     }
   }
 
-  @media screen and (max-width: ${getMobileBreakpoint}) {
+  @media screen and (max-width: ${getBreakpoint('mobile')}) {
     /* regole CSS */
     font-size: ${props => props.theme.font.size.l};
   }

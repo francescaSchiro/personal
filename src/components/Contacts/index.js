@@ -6,7 +6,7 @@ import SectionTitleContainer from "./SectionTitleContainer";
 const Contacts = () => (
   <Wrapper className="contactsSection">
     <SectionTitleContainer>
-      <SectionTitle fontColor={props => props.theme.color.lightBlue}>
+      <SectionTitle sectionColor={props => props.theme.color.lightBlue}>
         Contacts
       </SectionTitle>
     </SectionTitleContainer>

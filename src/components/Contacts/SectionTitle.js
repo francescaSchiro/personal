@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getMobileBreakpoint } from "../../utils";
+import { getBreakpoint } from "../../utils";
 // ${props => props.theme.font.size.sectionTitle};
 const Sectiontitle = styled.p`
   /* margin-top: 50px; */
@@ -8,13 +8,13 @@ const Sectiontitle = styled.p`
 
   /* height:100%; */
   margin-top: 90px;
-  margin-right: -20px;
+  margin-right: -10px;
 
   /* padding: 40px; */
   font-family: ${props => props.theme.font.family.titles};
-  font-size: 20vw;
+  font-size:  ${props => props.theme.font.size.sectionMobile};
   font-weight: ${props => props.theme.font.weight.bold};
-  color: ${props => props.fontColor};
+  color: ${props => props.sectionColor};
   /* position: absolute; */
 
   /* top: ${props => props.top};
@@ -31,11 +31,23 @@ const Sectiontitle = styled.p`
     background: ${props => props.fontColor};
   }
 
-  @media screen and (max-width: ${getMobileBreakpoint}) {
+  @media screen and (max-width: ${getBreakpoint('desktop')} ) and (min-width: ${getBreakpoint('tablet')})  {
     /* regole CSS */
-    font-size: ${props => props.theme.font.size.sectionMobile};
+    font-size: ${props => props.theme.font.size.sectionTitleDesktop};  
+  }
+  @media screen and (max-width: ${getBreakpoint('tablet')})  and (min-width: ${getBreakpoint('mobile')}) {
+    /* regole CSS */
+    font-size: ${props => props.theme.font.size.sectionTitleTablet};
     
   }
+
+  @media screen and (max-width: ${getBreakpoint('mobile')}) {
+    /* regole CSS */
+    font-size: ${props => props.theme.font.size.sectionTitleMobile};
+    
+  }
+
+
   
 `;
 

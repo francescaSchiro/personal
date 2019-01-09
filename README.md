@@ -38,6 +38,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] try to deploy on **now** https://francescaschiro-yxfetbdmwj.now.sh/
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
 - [x] make free scroll (commented out css in app wrapper and sections)
+- [ ] FIX mediaqueries titles contacts  TODO in others and define fontsize vw
 - [ ] picking eyes on hover see CV. transparent div going up with change opacity:1
 - [ ] make about section
 - [ ] download CV link

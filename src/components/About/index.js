@@ -36,7 +36,7 @@ const About = () => (
     </PContainer>
     <LinkContainer>
       <Link
-        fontColor={props => props.theme.color.yellow}
+        sectionColor={props => props.theme.color.yellow}
         href="https://docdro.id/U6bDALF"
         target="_blank"
         rel="noopener noreferrer"

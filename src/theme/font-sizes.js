@@ -7,5 +7,7 @@ export default {
     xl: '16px',
     xxl: '18px',
     sectionTitle: '120px',
-    sectionMobile: '60px'
+    sectionTitleMobile: '20vw',
+    sectionTitleTablet: '18vw',
+    sectionTitleDesktop: '15vw'
 };  
