@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top:90px;
+
 `;
 
 export default Wrapper;

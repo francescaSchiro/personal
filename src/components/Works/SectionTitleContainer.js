@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-// import { getBgGradient } from '../../utils';
-/* ${props => getBgGradient(props.theme.color.yellow, props.theme.color.red)}; */
-
 const SectionTitleContainer = styled.div`
   width: 100%;
   border: 2px solid var(--yellow);

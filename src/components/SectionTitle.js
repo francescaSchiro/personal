@@ -34,7 +34,6 @@ const Sectiontitle = styled.p`
     font-size: ${props => props.theme.font.size.sectionTitleMobile};
     
   }
-
 `;
 
 export default Sectiontitle;
