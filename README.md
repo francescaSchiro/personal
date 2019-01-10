@@ -39,20 +39,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
 - [x] make free scroll (commented out css in app wrapper and sections)
 - [x] FIX mediaqueries titles contacts  TODO in others and define fontsize vw
+- [x] make icon render based on { props.isLightTheme ? 'icondarklightbulb' : 'iconLightBulbon'}
+- [x]  navItems hover
+- [x] download CV link external host not downloading directly
 - [x] make 1 SectionTitle
-- [ ] make 1 sectionTitle Container
-- [ ] picking eyes on hover see CV. transparent div going up with change opacity:1
-- [ ] make about section
-- [ ] download CV link
+- [ ] ADD carousel TODO finish to implement. see CBody
+- [ ] implement Work Carousel with React-reveal library https://www.react-reveal.com/tutorials/carousel/
+- [ ] make 1 sectionTitleContainer
+- [ ] picking eyes on hover see CV.(before after icons) transparent div going up with change opacity:1
+- [ ] make about section text
 - [ ] make work section w/ behance link
 - [ ] make contact section
-- [ ] symbols behind on navItems hover
 - [ ] animate on scroll with https://github.com/michalsnik/aos/tree/v2
-- [ ] make icon render based on { props.isLightTheme ? 'icondarklightbulb' : 'iconLightBulbon'} no disabled. only 1 button. onClick toggle props.isLightTheme boolean value
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
 - [ ] make placeholders for no connection: (icons and system font alternatives) added alt to button icons?
-- [ ] make nav items as component rendering different css symbol based on passed prop
-- [ ] Animated Hamburger menu -> X for nav on responsive view.
+- [ ] ?     Animated Hamburger menu -> X for nav on responsive view.
 - [ ] hide menu on scroll down and show on scroll up
 - [ ] ?? make symbols in nav https://altcodeunicode.com/alt-codes-geometric-shape-symbols/
 - [ ] make symbols with css https://css-tricks.com/the-shapes-of-css/

@@ -2,6 +2,7 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import SectionTitle from '../SectionTitle';
 import SectionTitleContainer from './SectionTitleContainer';
+import CarouselSlider from './CarouselSlider';
 // import CardsSlider from './CardsSlider';
 // import CardWrapper from './CardWrapper';
 // import CardTitle from './CardTitle';
@@ -17,6 +18,11 @@ const Works = () => (
         Works
       </SectionTitle>
     </SectionTitleContainer>
+    <CarouselSlider />
+
+
+
+
   </Wrapper>
 );
 

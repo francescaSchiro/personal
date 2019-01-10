@@ -14,7 +14,6 @@ const CardWrapper = styled.li`
   width: 300px;
 
 
-  background-image: url(${props => props.coverUrl});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

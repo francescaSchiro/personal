@@ -74,11 +74,11 @@ class App extends Component {
               <ButtonsWrapper>
                 {lightIcon ? (
                   <ButtonTheme onClick={this.switchToDarkTheme}>
-                    <i class='fas fa-lightbulb' alt='dark' />
+                    <i className='fas fa-lightbulb' alt='dark' />
                   </ButtonTheme>
                 ) : (
                   <ButtonTheme onClick={this.switchToDefaultTheme}>
-                    <i class='fas fa-lightbulb' alt='light' />
+                    <i className='fas fa-lightbulb' alt='light' />
                   </ButtonTheme>
                 )}
               </ButtonsWrapper>

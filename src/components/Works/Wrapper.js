@@ -7,14 +7,13 @@ const Wrapper = styled.div`
   /* height:100%; */
   /* min-height: 100%; */
   width: 100%;
-  border: 2px solid var(--red);
+  border: 2px solid red;
   /* scroll-snap-align: start; */
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top:90px;
 
 `;
 
