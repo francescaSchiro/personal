@@ -9,7 +9,7 @@ const Dot = styled.div`
   background-color: ${props => props.theme.color.fontColor};
 
   animation-name: scroll;
-  animation-duration: 1.5s;
+  animation-duration: 1.7s;
   animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
   animation-iteration-count: infinite;
   transform-origin: 50% 20.5px;

@@ -23,18 +23,18 @@ class App extends Component {
     super(props);
     this.state = {
       theme: themes.DefaultTheme,
-      lightIcon: true,
+      lightIcon: true
     };
   }
   switchToDefaultTheme = () =>
     this.setState({
       theme: themes.DefaultTheme,
-      lightIcon: true,
+      lightIcon: true
     });
   switchToDarkTheme = () =>
     this.setState({
       theme: themes.DarkTheme,
-      lightIcon: false,
+      lightIcon: false
     });
 
   render() {
@@ -73,16 +73,12 @@ class App extends Component {
               </NavItemsWrapper>
               <ButtonsWrapper>
                 {lightIcon ? (
-                  <ButtonTheme
-                    onClick={this.switchToDarkTheme}
-                  >
-                    <i className='far fa-moon' alt='dark' />
+                  <ButtonTheme onClick={this.switchToDarkTheme}>
+                    <i className='fas fa-lightbulb' alt='dark' />
                   </ButtonTheme>
                 ) : (
-                  <ButtonTheme
-                    onClick={this.switchToDefaultTheme}
-                  >
-                    <i className='far fa-sun' alt='light' />
+                  <ButtonTheme onClick={this.switchToDefaultTheme}>
+                    <i className='fas fa-lightbulb' alt='light' />
                   </ButtonTheme>
                 )}
               </ButtonsWrapper>
