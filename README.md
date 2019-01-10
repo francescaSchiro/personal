@@ -37,8 +37,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] make scroll down dot in home https://www.creativebloq.com/inspiration/css-animation-examples https://codepen.io/matchboxhero/pen/gGdJYo
 - [x] try to deploy on **now** https://francescaschiro-yxfetbdmwj.now.sh/
 - [x] try to deploy on **github pages** https://facebook.github.io/create-react-app/docs/deployment
-- [x] make free scroll (commented out css in app wrapper and sections)
-- [ ] FIX mediaqueries titles contacts  TODO in others and define fontsize vw
+- [x] make free scroll (commented out css in app wrapper and sections) -[ ] why deletes theme icon when i delete index.css? replace with global style
+- [ ] FIX mediaqueries titles contacts TODO in others and define fontsize vw
 - [ ] picking eyes on hover see CV. transparent div going up with change opacity:1
 - [ ] make about section
 - [ ] download CV link

@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const LinkContainer = styled.div`
   width: 100%;
-  border: 2px solid var(--yellow);
+  margin-top: 40px;
   /* scroll-snap-align: start; */
   border: 2px solid lightblue;
 
