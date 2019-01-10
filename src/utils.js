@@ -18,13 +18,15 @@ export const getBreakpoint = device => {
       return '768px';
     } //min-width?
     case 'desktop': {
-      return '2000px';
+      return '1800px';
     }
     default: {
       return console.log('not given breakpoint device');
     }
   }
 };
+
+
 
 export const getBgGradient = (a, b) => {
   return ` 

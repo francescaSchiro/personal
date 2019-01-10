@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "./Wrapper";
 import SectionTitleContainer from "./SectionTitleContainer";
 import PContainer from "./PContainer";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 import P from "../P";
 import LinkContainer from "./LinkContainer";
 import Link from "../Link";
@@ -11,8 +11,7 @@ const About = () => (
   <Wrapper className="aboutSection">
     <SectionTitleContainer>
       <SectionTitle
-        // top={"100px"}
-        // left={"-30px"}
+        margins={'90px 0 0 -20px'}
         sectionColor={props => props.theme.color.yellow}
       >
         About
