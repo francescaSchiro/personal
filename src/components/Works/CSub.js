@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const CSub = styled.div`
   display: flex;
@@ -6,8 +6,8 @@ const CSub = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  font-family: ${props => props.theme.font.family.titles};
-  font-size: ${props => props.theme.font.size.xl};
+  font-family: ${props => props.theme.font.family.paragraph};
+  font-size: ${props => props.theme.font.size.l};
   color: ${props => props.theme.color.fontColor};
 
   ::-moz-selection {
