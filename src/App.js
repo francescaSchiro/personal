@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import { ThemeProvider } from './theme';
-import GlobalStyles from './theme/GlobalStyle';
-import Fade from 'react-reveal/Fade';
-import { themes } from './theme/index';
-import { scrollToSection } from './utils';
+import React, { Component } from "react";
+import { ThemeProvider } from "./theme";
+import GlobalStyles from "./theme/GlobalStyle";
+import Fade from "react-reveal/Fade";
+import { themes } from "./theme/index";
+import { scrollToSection } from "./utils";
 
-import AppWrapper from './AppWrapper';
-import NavWrapper from './components/Nav/NavWrapper';
-import NavItem from './components/Nav/NavItem';
-import NavItemsWrapper from './components/Nav/NavItemsWrapper';
-import ButtonsWrapper from './components/Nav/ButtonsWrapper';
-import ButtonTheme from './components/Nav/ButtonTheme';
-import Home from './components/Home';
-import About from './components/About/';
-import Works from './components/Works/';
-import Contacts from './components/Contacts/';
+import AppWrapper from "./AppWrapper";
+import NavWrapper from "./components/Nav/NavWrapper";
+import NavItem from "./components/Nav/NavItem";
+import NavItemsWrapper from "./components/Nav/NavItemsWrapper";
+import ButtonsWrapper from "./components/Nav/ButtonsWrapper";
+import ButtonTheme from "./components/Nav/ButtonTheme";
+import Home from "./components/Home";
+import About from "./components/About/";
+import Works from "./components/Works/";
+import Contacts from "./components/Contacts/";
 
 // import { getThemeByName } from './utils';
 
@@ -44,48 +44,54 @@ class App extends Component {
         <React.Fragment>
           <GlobalStyles />
           <AppWrapper>
-            <NavWrapper id='navbar' isGradientWhite={lightIcon}>
-            <Fade left >
+            <NavWrapper id="navbar" isGradientWhite={lightIcon}>
               <NavItemsWrapper>
-                <NavItem
-                  onClick={() => scrollToSection('.homeSection')}
-                  sectionColor={props => props.theme.color.gray}
-                >
-                  Home /
-                </NavItem>
-                <NavItem
-                  onClick={() => scrollToSection('.aboutSection')}
-                  sectionColor={props => props.theme.color.yellow}
-                >
-                  About /
-                </NavItem>
-                <NavItem
-                  onClick={() => scrollToSection('.worksSection')}
-                  sectionColor={props => props.theme.color.red}
-                >
-                  Works /
-                </NavItem>
-                <NavItem
-                  onClick={() => scrollToSection('.contactsSection')}
-                  sectionColor={props => props.theme.color.lightBlue}
-                >
-                  Contacts /
-                </NavItem>
+                <Fade left>
+                  <NavItem
+                    onClick={() => scrollToSection(".homeSection")}
+                    sectionColor={props => props.theme.color.gray}
+                  >
+                    Home /
+                  </NavItem>
+                </Fade>
+                <Fade left>
+                  <NavItem
+                    onClick={() => scrollToSection(".aboutSection")}
+                    sectionColor={props => props.theme.color.yellow}
+                  >
+                    About /
+                  </NavItem>
+                </Fade>
+                <Fade left>
+                  <NavItem
+                    onClick={() => scrollToSection(".worksSection")}
+                    sectionColor={props => props.theme.color.red}
+                  >
+                    Works /
+                  </NavItem>
+                </Fade>
+                <Fade left>
+                  <NavItem
+                    onClick={() => scrollToSection(".contactsSection")}
+                    sectionColor={props => props.theme.color.lightBlue}
+                  >
+                    Contacts /
+                  </NavItem>
+                </Fade>
               </NavItemsWrapper>
-              </Fade>
-              <Fade right >
               <ButtonsWrapper>
-                {lightIcon ? (
-                  <ButtonTheme onClick={this.switchToDarkTheme}>
-                    <i className='fas fa-lightbulb' alt='dark' />
-                  </ButtonTheme>
-                ) : (
-                  <ButtonTheme onClick={this.switchToDefaultTheme}>
-                    <i className='fas fa-lightbulb' alt='light' />
-                  </ButtonTheme>
-                )}
+                <Fade right>
+                  {lightIcon ? (
+                    <ButtonTheme onClick={this.switchToDarkTheme}>
+                      <i className="fas fa-lightbulb" alt="dark" />
+                    </ButtonTheme>
+                  ) : (
+                    <ButtonTheme onClick={this.switchToDefaultTheme}>
+                      <i className="fas fa-lightbulb" alt="light" />
+                    </ButtonTheme>
+                  )}
+                </Fade>
               </ButtonsWrapper>
-              </Fade>
             </NavWrapper>
             <Home />
             <About />

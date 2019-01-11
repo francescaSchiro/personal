@@ -44,17 +44,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] navItems hover
 - [x] download CV link external host not downloading directly
 - [x] make 1 SectionTitle
-- [x] add  effect at home from [react-reveal](https://www.react-reveal.com/docs/props/)
+- [x] add effect at home from [react-reveal](https://www.react-reveal.com/docs/props/)
 - [x] dont want 100 vh for othe sections other than Home. Move id for scrollIntoView() method to SectionTitleContainer instead of Section Wrapper so it scrolls right.
 - [x] Mobile Handmade carousel. implement horizontal scroll snap.
-- [x]  Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
+- [x] Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
 - [x] implement scrollbar horiz to navigate in desktop without touch.(couldnt make Dot button working with scrollLeft **TODO**)
-- [x] make Dot for navigating CarouselHandmade component 
+- [x] make Dot for navigating CarouselHandmade component
 - [ ] implement function in utils at onclick arrow for horizontal carousel scrollLeft https://www.w3schools.com/jsref/prop_element_scrollleft.asp
 - [ ] make description scroll at bottom;
 - [ ] ? make images smaller on desktop;
 - [ ] make square covers
-- [ ] horizontal scrolling dot like in home? 
+- [ ] horizontal scrolling dot like in home?
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section
@@ -85,12 +85,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
 
 ---
+
 ## TO DEPLOY to gh pages:
 
 `yarn run build`
 
-[more info](https://facebook.github.io/create-react-app/docs/deployment)
----
+## [more info](https://facebook.github.io/create-react-app/docs/deployment)
 
 - why can't make automatic imports with lightbulg suggestions??
 - pull nav up in browsers;
@@ -100,3 +100,43 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Font Awesome
 - Pure CSS animations ( Eg. _scroll-snap_ & _scroll-snap-align_ )
 - Pure JS animations ( Eg. _scrollToSections_ )
+
+##BUGS :
+
+# !!! **add to css module for smooth scrolling like in iOS** -------------
+
+`overflow-y: scroll;`
+`-webkit-overflow-scrolling:touch;`
+
+---> _ADDED to AppWrapper.js_
+
+---
+
+# !!! **Reveal not working properly on Safari 11 and IE 11 (opacity stuck at 0)** ----
+
+To try:
+
+- [x] remove overflox-x:hidden; and overflow:scroll to body and html tag;
+
+* **removedc/ommented:**
+
+---> in _CardsSlider.js_
+
+- `transition: all 0.2s ease-in-out;`
+- `overflow-x: scroll;`
+- `overflow-x: scroll;`
+  `overflow-y: hidden;` in @mediaqueries
+- `scroll-snap-type: mandatory;`
+  `scroll-snap-type: x mandatory`(in @mediaqueries) **to remove snapping**
+- LEFT: `white-space: nowrap;`
+  ---> in _CardWrapper.js_
+- `/* scroll-snap-align: start; */`
+
+* **Added:**
+
+  - `/* for smooth scrolling like in iOS */`
+    `overflow-x: scroll;`
+    `-webkit-overflow-scrolling: touch;`
+
+- [ ] remove transition property on react reveal children;
+- [ ] use simple html tags not styled components!

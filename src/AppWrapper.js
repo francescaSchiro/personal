@@ -10,14 +10,19 @@ const AppWrapper = styled.div`
 
   /* scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory; */
-  overflow-y: scroll;
 
   /*hide scrollbar*/
+
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+
   ::-webkit-scrollbar {
     display: none;
   }
+
+  /* for smooth scrolling like in iOS */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 `;
 
 export default AppWrapper;

@@ -6,132 +6,298 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 
 :root {
-	--red: #F78888;
-	--yellow: #F3D250;
-	--white: #ECECEC;
-	--lightBlue: #90CCF4;
-	--blue: #5DA2D5;
+  --red: #f78888;
+  --yellow: #f3d250;
+  --white: #ececec;
+  --lightBlue: #90ccf4;
+  --blue: #5da2d5;
 
-	--black: #000000;
-	--pink: #EC576B;
-	--aqua: #4EC5C1;
-	--lime: #E5E338;
+  --black: #000000;
+  --pink: #ec576b;
+  --aqua: #4ec5c1;
+  --lime: #e5e338;
 
-	--c: #43C0F6;
-	--m: #F81B84;
-	--y: #F5CE28;
-	--k: #000000;
-	--beige: #F2EEE2;
-	
+  --c: #43c0f6;
+  --m: #f81b84;
+  --y: #f5ce28;
+  --k: #000000;
+  --beige: #f2eee2;
 }
 /*------RESET------------*/
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font-weight: normal;
-	vertical-align: baseline;
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	
-	scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
 
+  scroll-behavior: smooth;
 }
 
-article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
 
 /* Handle box-sizing while better addressing child elements:
    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img,
 object,
-embed {max-width: 100%;}
+embed {
+  max-width: 100%;
+}
 
 /* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+html {
+  overflow-y: scroll;
+}
 
-ol, ul {list-style: none;}
+ol,
+ul {
+  list-style: none;
+}
 
-blockquote, q {quotes: none;}
+blockquote,
+q {
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {content: ''; content: none;}
-
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
-
-del {text-decoration: line-through;}
-
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
-
-hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
-
-input, select {vertical-align: middle;}
-
-pre {
-    white-space: pre; /* CSS2 */
-    white-space: pre-wrap; /* CSS 2.1 */
-    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-    word-wrap: break-word; /* IE */
+q:after {
+  content: "";
+  content: none;
 }
 
-input[type="radio"] {vertical-align: text-bottom;}
-input[type="checkbox"] {vertical-align: bottom;}
-.ie7 input[type="checkbox"] {vertical-align: baseline;}
-.ie6 input {vertical-align: text-bottom;}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
-select, input, textarea {font: 99% sans-serif;}
+del {
+  text-decoration: line-through;
+}
 
-table {font-size: inherit; font: 100%;}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
 
-small {font-size: 85%;}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-strong {font-weight: bold;}
+input,
+select {
+  vertical-align: middle;
+}
 
-td, td img {vertical-align: top;}
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
 
 /* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
-sub, sup {font-size: 75%; line-height: 0; position: relative;}
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* standardize any monospaced elements */
-pre, code, kbd, samp {font-family: monospace, sans-serif;}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
 
 /* hand cursor on clickable elements */
 .clickable,
 label,
-input[type=button],
-input[type=submit],
-input[type=file],
-button {cursor: pointer;}
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
+  cursor: pointer;
+}
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {margin: 0;}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
 
 /* make buttons play nice in IE */
 button,
-input[type=button] {width: auto; overflow: visible;}
+input[type="button"] {
+  width: auto;
+  overflow: visible;
+}
 
 /* scale images in IE7 more attractively */
-.ie7 img {-ms-interpolation-mode: bicubic;}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
 
 /* let's clear some floats */
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
 
 /* from create react app */
 code {
@@ -140,8 +306,8 @@ code {
 }
 
 a:focus {
-	text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 /* ------------ GENERAL --------------- 
 
@@ -205,7 +371,7 @@ body {
 	margin-bottom: 25px;
   }
  */
-  /* Roboto monospace? and Rubik combo?
+/* Roboto monospace? and Rubik combo?
 p {
 	font-family: "Inconsolata", monospace; 
 	font-weight: 300;
@@ -227,8 +393,8 @@ p {
 	color: white;
   }
 */
-	/* other shortcodes */
-	/* 
+/* other shortcodes */
+/* 
 .z-index {
 	position: relative;
 	z-index: 10 !important;
@@ -261,4 +427,4 @@ p {
 	overflow: hidden;
   }
   */
-  /*-------ANIMATIONS ----------*/
+/*-------ANIMATIONS ----------*/

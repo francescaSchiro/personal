@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { getBreakpoint } from '../../utils';
+import styled from "styled-components";
+import { getBreakpoint } from "../../utils";
 
-import Overlay from './Overlay';
-import CardTitle from './CardTitle';
-import SeeMore from './SeeMore';
+import Overlay from "./Overlay";
+import CardTitle from "./CardTitle";
+import SeeMore from "./SeeMore";
 
 const CardWrapper = styled.li`
   position: relative;
@@ -43,8 +43,8 @@ const CardWrapper = styled.li`
   }
 
   @media screen and (max-width: ${getBreakpoint(
-      'desktop'
-    )}) and (min-width: ${getBreakpoint('tablet')}) {
+      "desktop"
+    )}) and (min-width: ${getBreakpoint("tablet")}) {
     /* width: 30vw;
       height: 30vw;
       margin: 1vw ; */
@@ -57,12 +57,11 @@ const CardWrapper = styled.li`
     align-items: center;
     justify-content: center;
     margin-right: 2vw;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
   }
   @media screen and (max-width: ${getBreakpoint(
-      'tablet'
+      "tablet"
     )}) and (min-width: 600px) {
- 
     width: 40vw;
     height: 40vw;
     display: inline-flex;
@@ -70,7 +69,7 @@ const CardWrapper = styled.li`
     align-items: center;
     justify-content: center;
     margin-right: 2vw;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
   }
 
   @media screen and (max-width: 600px) {
@@ -82,7 +81,7 @@ const CardWrapper = styled.li`
     align-items: center;
     justify-content: center;
     margin-right: 2vw;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
   }
 `;
 
