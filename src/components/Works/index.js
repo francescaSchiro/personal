@@ -3,7 +3,7 @@ import Zoom from 'react-reveal/Zoom';
 import Wrapper from './Wrapper';
 import SectionTitle from '../SectionTitle';
 import SectionTitleContainer from './SectionTitleContainer';
-import CarouselSlider from './CarouselSlider';
+// import CarouselSlider from './CarouselSlider';
 import CarouselHandmade from './CarouselHandmade';
 
 
@@ -20,8 +20,9 @@ const Works = () => (
       </Zoom>
     </SectionTitleContainer>
     <CarouselHandmade />
-    <CarouselSlider />
   </Wrapper>
 );
 
 export default Works;
+
+/* <CarouselSlider /> */

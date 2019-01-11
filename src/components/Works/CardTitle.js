@@ -10,9 +10,11 @@ const CardTitle = styled.div`
   font-size: ${props => props.theme.font.size.xl};
   color: white;
   padding: 20px;
+  background-color: rgba(0,0,0, 0.4);
+  }
 
   &:hover {
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(0,0,0, 0.7);
   }
 
   @media only screen and (max-width: 768px){

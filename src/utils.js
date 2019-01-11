@@ -70,6 +70,10 @@ export const cards = [
   }
 ];
 
+
+export const scrollRight = (elId) => {
+  document.getElementById(`${elId}`).scrollLeft = 50;
+}
 /**
  * @name - scrollToView
  * @description - function to call on nav Item Click to scroll to section

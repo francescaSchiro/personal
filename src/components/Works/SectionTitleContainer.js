@@ -8,6 +8,7 @@ const SectionTitleContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 
   /* position: relative; */
   overflow: hidden;
