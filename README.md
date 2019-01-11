@@ -83,6 +83,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] Prettier ?
 - [ ] make and update favicon.ico
 - [ ] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
+- [ ] change color nav tab when scrolling
 
 ---
 
@@ -103,6 +104,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##BUGS :
 
+---
+
 # !!! **add to css module for smooth scrolling like in iOS** -------------
 
 `overflow-y: scroll;`
@@ -118,7 +121,11 @@ To try:
 
 - [x] remove overflox-x:hidden; and overflow:scroll to body and html tag;
 
-* **removedc/ommented:**
+- [ ]? tried: wrapped the actual About title with the <Fade> component.
+
+---
+
+**removedc/ommented:**
 
 ---> in _CardsSlider.js_
 
@@ -140,3 +147,9 @@ To try:
 
 - [ ] remove transition property on react reveal children;
 - [ ] use simple html tags not styled components!
+
+---
+
+# !!! on ipad and iphone anchor nav dont work!!!!!\*\* ----
+
+- [ ] ? fixed with `href='#sectionId'` given to navitems <a> andgvind id to sections

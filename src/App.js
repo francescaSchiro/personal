@@ -48,32 +48,37 @@ class App extends Component {
               <NavItemsWrapper>
                 <Fade left>
                   <NavItem
-                    onClick={() => scrollToSection(".homeSection")}
+                    // onClick={() => scrollToSection(".homeSection")}
                     sectionColor={props => props.theme.color.gray}
+                    type="button"
+                    href="#home"
                   >
                     Home /
                   </NavItem>
                 </Fade>
                 <Fade left>
                   <NavItem
-                    onClick={() => scrollToSection(".aboutSection")}
+                    // onClick={() => scrollToSection(".aboutSection")}
                     sectionColor={props => props.theme.color.yellow}
+                    href="#about"
                   >
                     About /
                   </NavItem>
                 </Fade>
                 <Fade left>
                   <NavItem
-                    onClick={() => scrollToSection(".worksSection")}
+                    // onClick={() => scrollToSection(".worksSection")}
                     sectionColor={props => props.theme.color.red}
+                    href="#works"
                   >
                     Works /
                   </NavItem>
                 </Fade>
                 <Fade left>
                   <NavItem
-                    onClick={() => scrollToSection(".contactsSection")}
+                    // onClick={() => scrollToSection(".contactsSection")}
                     sectionColor={props => props.theme.color.lightBlue}
+                    href="#contacts"
                   >
                     Contacts /
                   </NavItem>

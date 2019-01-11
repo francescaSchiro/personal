@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { getBreakpoint } from "../../utils";
 
-const NavItem = styled.div`
+const NavItem = styled.a`
   all: unset;
   cursor: pointer;
   margin-right: 4px;
@@ -23,7 +23,7 @@ const NavItem = styled.div`
     }
   }
 
-  @media screen and (max-width: ${getBreakpoint('mobile')}) {
+  @media screen and (max-width: ${getBreakpoint("mobile")}) {
     /* regole CSS */
     font-size: ${props => props.theme.font.size.l};
   }

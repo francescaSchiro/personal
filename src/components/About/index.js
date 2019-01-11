@@ -1,30 +1,28 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
-import Wrapper from './Wrapper';
-import SectionTitleContainer from './SectionTitleContainer';
-import PContainer from './PContainer';
-import SectionTitle from '../SectionTitle';
-import P from '../P';
-import LinkContainer from './LinkContainer';
-import Link from '../Link';
+import React from "react";
+import Fade from "react-reveal/Fade";
+import Wrapper from "./Wrapper";
+import SectionTitleContainer from "./SectionTitleContainer";
+import PContainer from "./PContainer";
+import SectionTitle from "../SectionTitle";
+import P from "../P";
+import LinkContainer from "./LinkContainer";
+import Link from "../Link";
 
 const About = () => (
-  <Wrapper >
-    <SectionTitleContainer className='aboutSection'>
-      <Fade left>
-        <SectionTitle
-          margins={'90px 0 0 -20px'}
-          sectionColor={props => props.theme.color.yellow}
-        >
-          About
-        </SectionTitle>
-      </Fade>
+  <Wrapper>
+    <SectionTitleContainer className="aboutSection" id="about">
+      <SectionTitle
+        margins={"90px 0 0 -20px"}
+        sectionColor={props => props.theme.color.yellow}
+      >
+        <Fade left>About</Fade>
+      </SectionTitle>
     </SectionTitleContainer>
 
     <Fade right>
       <PContainer>
         <P sectionColor={props => props.theme.color.yellow}>
-          {' '}
+          {" "}
           Ciao. <br />
           My Name is Francesca,
           <br />
@@ -40,17 +38,16 @@ const About = () => (
       </PContainer>
     </Fade>
     <LinkContainer>
-    <Fade >
-      <Link
-        sectionColor={props => props.theme.color.yellow}
-        href='https://docdro.id/U6bDALF'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Curious? Take a look at my CV
-      </Link>
+      <Fade>
+        <Link
+          sectionColor={props => props.theme.color.yellow}
+          href="https://docdro.id/U6bDALF"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Curious? Take a look at my CV
+        </Link>
       </Fade>
-
     </LinkContainer>
   </Wrapper>
 );
