@@ -51,10 +51,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] make arrows for navigating CarouselHandmade component 
 - [ ] implement function in utils at onclick arrow for horizontal carousel scroll. https://www.w3schools.com/jsref/prop_element_scrollleft.asp
 - [ ] make square covers
+- [ ] horizontal scrolling dot like in home? 
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section
-- [ ] scrollIntoView util used to manage horizontal scroll from scratch? onClick go to anchored Card.
 - [ ] ADD carousel TODO finish to implement. see CBody
 - [ ] implement Work Carousel with React-reveal library https://www.react-reveal.com/tutorials/carousel/
 - [ ] make 1 sectionTitleContainer
