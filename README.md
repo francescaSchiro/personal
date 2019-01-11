@@ -44,6 +44,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] navItems hover
 - [x] download CV link external host not downloading directly
 - [x] make 1 SectionTitle
+- [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section
 - [ ] scrollIntoView util used to manage horizontal scroll from scratch? onClick go to anchored Card.
