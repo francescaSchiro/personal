@@ -48,8 +48,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] dont want 100 vh for othe sections other than Home. Move id for scrollIntoView() method to SectionTitleContainer instead of Section Wrapper so it scrolls right.
 - [x] Mobile Handmade carousel. implement horizontal scroll snap.
 - [x]  Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
-- [ ] make arrows for navigating CarouselHandmade component 
-- [ ] implement function in utils at onclick arrow for horizontal carousel scroll. https://www.w3schools.com/jsref/prop_element_scrollleft.asp
+- [x] implement scrollbar horiz to navigate in desktop without touch.(couldnt make Dot button working with scrollLeft **TODO**)
+- [x] make Dot for navigating CarouselHandmade component 
+- [ ] implement function in utils at onclick arrow for horizontal carousel scrollLeft https://www.w3schools.com/jsref/prop_element_scrollleft.asp
+- [ ] make description scroll at bottom;
+- [ ] ? make images smaller on desktop;
 - [ ] make square covers
 - [ ] horizontal scrolling dot like in home? 
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
