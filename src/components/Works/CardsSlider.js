@@ -6,7 +6,6 @@ const CardsSlider = styled.ul`
   width: 100vw;
   border: 2px solid red;
   transition: all 0.2s ease-in-out;
-  margin-bottom: 20px;
 
   /* ------------SCROLL UI ----------*/
 
@@ -36,14 +35,11 @@ const CardsSlider = styled.ul`
   @media screen and (max-width: ${getBreakpoint(
       'desktop'
     )}) and (min-width: ${getBreakpoint('tablet')}) {
-    /* display:flex;
-    flex-wrap:wrap;
-    justify-content:center; */
-    /* prova */
+
     scroll-snap-type: mandatory;
     scroll-snap-type: x mandatory;
     /* 5 vw more than card height to detatch scrollbar */
-    height: 35vw;
+    height: 30vw;
     display: block;
     white-space: nowrap;
     overflow-x: scroll;
@@ -52,11 +48,7 @@ const CardsSlider = styled.ul`
   @media screen and (max-width: ${getBreakpoint(
       'tablet'
     )}) and (min-width: 600px) {
-    /* display:flex;
-    flex-wrap:wrap;
-    justify-content:center; */
 
-    /* prove */
     scroll-snap-type: mandatory;
     scroll-snap-type: x mandatory;
     /* 5 vw more than card height to detach scrollbar */

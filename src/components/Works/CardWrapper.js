@@ -50,8 +50,8 @@ const CardWrapper = styled.li`
       margin: 1vw ; */
 
     /* prova */
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -62,10 +62,7 @@ const CardWrapper = styled.li`
   @media screen and (max-width: ${getBreakpoint(
       'tablet'
     )}) and (min-width: 600px) {
-    /* width: 40vw;
-    height: 40vw;
-    margin: 1vw ; */
-    /* prova */
+ 
     width: 40vw;
     height: 40vw;
     display: inline-flex;

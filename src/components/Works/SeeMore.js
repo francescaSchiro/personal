@@ -4,12 +4,12 @@ const SeeMore = styled.a`
   display: none;
   /* all:unset; */
   position: absolute;
-  bottom: 10vw;
+  bottom: 10%;
 
   z-index: 2;
 
   font-family: ${props => props.theme.font.family.paragraph};
-  font-size: ${props => props.theme.font.size.xl};
+  font-size: ${props => props.theme.font.size.xxl};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.theme.color.red};
 
@@ -18,6 +18,8 @@ const SeeMore = styled.a`
     color: ${props => props.theme.color.backgroundColor};
     background: ${props => props.theme.color.red};
   }
+
+  
 
   ::selection {
     color: ${props => props.theme.color.backgroundColor};

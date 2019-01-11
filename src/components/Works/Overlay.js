@@ -14,8 +14,8 @@ const Overlay = styled.div`
   opacity: 0.5;
 
   @media screen and (max-width: ${getBreakpoint('desktop')} ) and (min-width: ${getBreakpoint('tablet')})  {
-    width:30vw;
-    height:30vw;
+    width: 25vw;
+    height: 25vw;
     
   }
   @media screen and (max-width: ${getBreakpoint('tablet')})  and (min-width:600px) {
