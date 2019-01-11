@@ -11,7 +11,7 @@ const CardTitle = styled.div`
   color: white;
   padding: 20px;
   background-color: rgba(0,0,0, 0.4);
-  }
+  
 
   &:hover {
     background-color: rgba(0,0,0, 0.7);
@@ -28,6 +28,6 @@ const CardTitle = styled.div`
     z-index: 2;
   }
   
-`;
+`; 
 
 export default CardTitle;
