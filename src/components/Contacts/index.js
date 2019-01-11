@@ -4,8 +4,8 @@ import SectionTitle from "../SectionTitle";
 import SectionTitleContainer from "./SectionTitleContainer";
 
 const Contacts = () => (
-  <Wrapper className="contactsSection">
-    <SectionTitleContainer>
+  <Wrapper >
+    <SectionTitleContainer className="contactsSection">
       <SectionTitle  margins={'90px -10px 0 0'} sectionColor={props => props.theme.color.lightBlue}>
         Contacts
       </SectionTitle>

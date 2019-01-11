@@ -36,7 +36,7 @@ const Children = styled.div`
 `;
 
 const Arrow = styled.div`
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px ${props=> props.theme.color.backgroundColor};
   color: ${props => props.theme.color.red};
   z-index: 100;
   line-height: ${height};
@@ -57,14 +57,20 @@ const Arrow = styled.div`
         `};
 `;
 
-const Dot = styled.span`
-  font-size: 1.5em;
+const Dot = styled.div`
+  margin:  0 5px;
+  height: 10px;
+  width:10px;
+  border-radius: 50%;
+  border: 1px solid ${props=> props.theme.color.red};
+  background-color: ${props=> props.full ? props.theme.color.red : 'transparent'};
   cursor: pointer;
   text-shadow: 1px 1px 1px #fff;
   user-select: none;
 `;
 
 const Dots = styled.div`
+margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -72,6 +78,7 @@ const Dots = styled.div`
   width: ${width};
   z-index: 100;
   border: 2px solid blue;
+
 `;
 
 // const Cards = [
@@ -105,9 +112,8 @@ const CarouselUI = ({ position, total, handleClick, children }) => (
     </Container>
     <Dots>
       {Array(...Array(total)).map((val, index) => (
-        <Dot key={index} onClick={handleClick} data-position={index}>
-          {index === position ? '● ' : '○ '}
-        </Dot>
+        <Dot full={index === position} key={index} onClick={handleClick} data-position={index}/>
+          
       ))}
     </Dots>
   </div>

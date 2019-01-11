@@ -3,14 +3,12 @@ import Wrapper from './Wrapper';
 import SectionTitle from '../SectionTitle';
 import SectionTitleContainer from './SectionTitleContainer';
 import CarouselSlider from './CarouselSlider';
-// import CardsSlider from './CardsSlider';
-// import CardWrapper from './CardWrapper';
-// import CardTitle from './CardTitle';
-// import Overlay from './Overlay';
+import CarouselHandmade from './CarouselHandmade';
+
 
 const Works = () => (
-  <Wrapper className='worksSection'>
-    <SectionTitleContainer>
+  <Wrapper >
+    <SectionTitleContainer className='worksSection'>
       <SectionTitle
         margins={'90px 0 0 0'}
         sectionColor={props => props.theme.color.red}
@@ -19,37 +17,8 @@ const Works = () => (
       </SectionTitle>
     </SectionTitleContainer>
     <CarouselSlider />
-
-
-
-
+    <CarouselHandmade />
   </Wrapper>
 );
 
 export default Works;
-
-// CAROUSEL HANDMADE
-/*
-    <CardsSlider>
-      <CardWrapper coverUrl = {'https://404store.com/2017/08/15/4949794-random-image.jpg'}>
-        <CardTitle>This is my title</CardTitle>
-        <Overlay />
-      </CardWrapper>
-
-      <CardWrapper coverUrl = {'https://404store.com/2017/08/15/4949794-random-image.jpg'}>
-        <CardTitle>This is my title</CardTitle>
-        <Overlay />
-      </CardWrapper>
-
-      <CardWrapper coverUrl = {'https://404store.com/2017/08/15/4949794-random-image.jpg'}>
-        <CardTitle>This is my title</CardTitle>
-        <Overlay />
-      </CardWrapper>
-
-      <CardWrapper coverUrl = {'https://404store.com/2017/08/15/4949794-random-image.jpg'}>
-        <CardTitle>This is my title</CardTitle>
-        <Overlay />
-      </CardWrapper>
-
-    </CardsSlider>
-    */

@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import Logo from "../Logo";
 import Wrapper from "./Wrapper";
 import NameWrapper from "./NameWrapper";
@@ -13,16 +14,22 @@ const Home = () => (
   <Wrapper className="homeSection">
     <Logo />
     <NameWrapper>
-      <H1 home sectionColor={props => props.theme.color.gray}>
-        Francesca Schiro
-      </H1>
-      <H3 sectionColor={props => props.theme.color.gray}>
-        Front End & Graphic Designer
-      </H3>
+      <Fade bottom cascade delay={1000}>
+        <H1 home sectionColor={props => props.theme.color.gray}>
+          Francesca Schiro
+        </H1>
+      </Fade>
+      <Fade bottom cascade delay={1500}>
+        <H3 sectionColor={props => props.theme.color.gray}>
+          Front End & Graphic Designer
+        </H3>
+      </Fade>
     </NameWrapper>
+    <Fade delay={2000}>
     <DotWrapper type="button" onClick={() => scrollToSection(".aboutSection")}>
       <Dot />
     </DotWrapper>
+    </Fade>
   </Wrapper>
 );
 

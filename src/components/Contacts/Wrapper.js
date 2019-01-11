@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: 100%;
   border: 2px solid var(--blue);
   /* scroll-snap-align: start; */
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

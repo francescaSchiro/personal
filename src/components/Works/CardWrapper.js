@@ -13,7 +13,7 @@ const CardWrapper = styled.li`
   height: 300px; /* 100% */
   width: 300px;
 
-
+  background-image: url(${props=> props.coverUrl});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

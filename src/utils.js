@@ -5,10 +5,17 @@
  */
 export const scrollToSection = classname => {
   document.querySelector(`${classname}`).scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'smooth',
+    block: 'start' 
+
   });
 };
-
+/**
+ * @name - getBreakpoint
+ * @description - function to get max-width of device screen for mediaqueries
+ * @param {string} device - name of device: 'mobile' | 'tablet' | 'desktop'
+ * @returns - width px
+ */
 export const getBreakpoint = device => {
   switch (device) {
     case 'mobile': {

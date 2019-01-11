@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from './theme';
 import GlobalStyles from './theme/GlobalStyle';
-
+import Fade from 'react-reveal/Fade';
 import { themes } from './theme/index';
 import { scrollToSection } from './utils';
 
@@ -45,6 +45,7 @@ class App extends Component {
           <GlobalStyles />
           <AppWrapper>
             <NavWrapper id='navbar' isGradientWhite={lightIcon}>
+            <Fade left >
               <NavItemsWrapper>
                 <NavItem
                   onClick={() => scrollToSection('.homeSection')}
@@ -71,6 +72,8 @@ class App extends Component {
                   Contacts /
                 </NavItem>
               </NavItemsWrapper>
+              </Fade>
+              <Fade right >
               <ButtonsWrapper>
                 {lightIcon ? (
                   <ButtonTheme onClick={this.switchToDarkTheme}>
@@ -82,6 +85,7 @@ class App extends Component {
                   </ButtonTheme>
                 )}
               </ButtonsWrapper>
+              </Fade>
             </NavWrapper>
             <Home />
             <About />
