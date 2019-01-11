@@ -19,28 +19,45 @@ const CardsSlider = styled.ul`
   @media screen and (max-width: ${getBreakpoint(
     'desktop'
   )} ) and (min-width: ${getBreakpoint('tablet')})  {
-    display:flex;
+    /* display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:center; */
+    /* prova */
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+    height: 30vw;
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
   }
   @media screen and (max-width: ${getBreakpoint(
     'tablet'
-  )})  and (min-width: ${getBreakpoint('mobile')}) {
+  )})  and (min-width: 600px) {
     
-    display:flex;
+    /* display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:center; */
+
+    /* prove */
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+    height: 40vw;
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
     
-  @media screen and (max-width: ${getBreakpoint('mobile')}) {
+  @media screen and (max-width: 600px) {
     scroll-snap-type: mandatory;
-  scroll-snap-type: x mandatory;
-
+    scroll-snap-type: x mandatory;
     height: 90vw;
     display: block;
     white-space: nowrap;
     overflow-x: scroll;
-  overflow-y: hidden;
+    overflow-y: hidden;
   }
 
 `;

@@ -45,18 +45,38 @@ const CardWrapper = styled.li`
   @media screen and (max-width: ${getBreakpoint(
       'desktop'
     )}) and (min-width: ${getBreakpoint('tablet')}) {
-    width: 25vw;
-    height: 25vw;
-    margin: 2vw 2vw;
+    /* width: 30vw;
+      height: 30vw;
+      margin: 1vw ; */
+
+    /* prova */
+    width: 30vw;
+    height: 30vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+    scroll-snap-align: start;
   }
   @media screen and (max-width: ${getBreakpoint(
       'tablet'
-    )}) and (min-width: ${getBreakpoint('mobile')}) {
+    )}) and (min-width: 600px) {
+    /* width: 40vw;
+    height: 40vw;
+    margin: 1vw ; */
+    /* prova */
     width: 40vw;
     height: 40vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+    scroll-snap-align: start;
   }
 
-  @media screen and (max-width: ${getBreakpoint('mobile')}) {
+  @media screen and (max-width: 600px) {
     width: 90vw;
     height: 90vw;
     display: inline-flex;
@@ -66,7 +86,6 @@ const CardWrapper = styled.li`
     justify-content: center;
     margin-right: 2vw;
     scroll-snap-align: start;
-    
   }
 `;
 

@@ -46,6 +46,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] make 1 SectionTitle
 - [x] add  effect at home from [react-reveal](https://www.react-reveal.com/docs/props/)
 - [x] dont want 100 vh for othe sections other than Home. Move id for scrollIntoView() method to SectionTitleContainer instead of Section Wrapper so it scrolls right.
+- [x] Mobile Handmade carousel. implement horizontal scroll snap.
+- [x]  Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
 - [ ] make arrows for navigating CarouselHandmade component 
 - [ ] implement function in utils at onclick arrow for horizontal carousel scroll. https://www.w3schools.com/jsref/prop_element_scrollleft.asp
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
