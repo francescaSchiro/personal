@@ -46,8 +46,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] make 1 SectionTitle
 - [x] add  effect at home from [react-reveal](https://www.react-reveal.com/docs/props/)
 - [x] dont want 100 vh for othe sections other than Home. Move id for scrollIntoView() method to SectionTitleContainer instead of Section Wrapper so it scrolls right.
-- [ ] make arrows for navigating CarouselHandmade component
-- [ ] implement function in utils at onclick arrow for horizontal carousel scroll.
+- [ ] make arrows for navigating CarouselHandmade component 
+- [ ] implement function in utils at onclick arrow for horizontal carousel scroll. https://www.w3schools.com/jsref/prop_element_scrollleft.asp
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section
