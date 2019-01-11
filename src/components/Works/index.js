@@ -19,8 +19,8 @@ const Works = () => (
       </SectionTitle>
       </Zoom>
     </SectionTitleContainer>
-    <CarouselSlider />
     <CarouselHandmade />
+    <CarouselSlider />
   </Wrapper>
 );
 

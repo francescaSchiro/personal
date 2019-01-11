@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const SeeMore = styled.a`
-display:none;
-/* all:unset; */
-position: absolute;
- bottom:10vw;
+  display: none;
+  /* all:unset; */
+  position: absolute;
+  bottom: 10vw;
 
-z-index:2;
+  z-index: 2;
 
   font-family: ${props => props.theme.font.family.paragraph};
   font-size: ${props => props.theme.font.size.xl};
-  font-weight: ${props => props.theme.font.weight.normal};
+  font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.theme.color.red};
 
   ::-moz-selection {

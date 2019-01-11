@@ -50,6 +50,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x]  Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
 - [ ] make arrows for navigating CarouselHandmade component 
 - [ ] implement function in utils at onclick arrow for horizontal carousel scroll. https://www.w3schools.com/jsref/prop_element_scrollleft.asp
+- [ ] make square covers
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section

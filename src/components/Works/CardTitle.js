@@ -12,7 +12,7 @@ const CardTitle = styled.div`
   padding: 20px;
 
   &:hover {
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0,0,0, 0.8);
   }
 
   @media only screen and (max-width: 768px){

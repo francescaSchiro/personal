@@ -80,22 +80,6 @@ margin-top: 20px;
   border: 2px solid blue;
 
 `;
-
-// const Cards = [
-//   {
-//     id: 0,
-//     title: '1st SLIDE',
-//     coverUrl: 'https://404store.com/2017/08/15/4949794-random-image.jpg',
-//     description: 'loprem ipsum dolor sit amet dfhfad blablablabla ablalba'
-//   },
-//   {
-//     id: 1,
-//     title: '2nd SLIDE',
-//     coverUrl: 'https://vignette.wikia.nocookie.net/austinally/images/1/14/Random_picture_of_shark.png/revision/latest?cb=20150911004230',
-//     description: 'little shark dudurruxidhijfjhfqwjm'
-//   }
-// ];
-
 // carousel UI
 const CarouselUI = ({ position, total, handleClick, children }) => (
   <div>
@@ -150,9 +134,3 @@ const CarouselSlider = () => (
 );
 
 export default CarouselSlider;
-
-// import { getBreakpoint } from '../../utils';
-/* 
-@media only screen and (max-width: ${getBreakpoint('mobile')}){
-  width: 100%;
-} */
