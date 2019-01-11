@@ -40,6 +40,7 @@ const About = () => (
       </PContainer>
     </Fade>
     <LinkContainer>
+    <Fade >
       <Link
         sectionColor={props => props.theme.color.yellow}
         href='https://docdro.id/U6bDALF'
@@ -48,6 +49,8 @@ const About = () => (
       >
         Curious? Take a look at my CV
       </Link>
+      </Fade>
+
     </LinkContainer>
   </Wrapper>
 );
