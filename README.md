@@ -44,6 +44,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] navItems hover
 - [x] download CV link external host not downloading directly
 - [x] make 1 SectionTitle
+- [x] add  effect at home from [react-reveal](https://www.react-reveal.com/docs/props/)
+- [ ] dont want 100 vh for othe sections other than Home. Move id for scrollIntoView() method to SectionTitleContainer instead of Section Wrapper so it scrolls right.
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
 - [ ] why deletes theme icon when i delete index.css? replace with global style
 - [ ] make about section
@@ -74,6 +76,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] make and update favicon.ico
 - [ ] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
 
+---
+## TO DEPLOY to gh pages:
+
+`yarn run build`
+
+[more info](https://facebook.github.io/create-react-app/docs/deployment)
 ---
 
 - why can't make automatic imports with lightbulg suggestions??
