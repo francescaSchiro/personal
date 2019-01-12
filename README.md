@@ -170,3 +170,9 @@ _in navitem href:_
 - TODO: reveal doesnt work show on iOS devices!!!!
 
 **TRY**: test new library `yarn add --save react-scrollable-anchor`
+
+**TODO**
+
+- make Reveal work on iOS devices!!!!!
+- or try AOS!!!! see if it works on iOS devices
+- smooth scroll between sections on iOS devices.
