@@ -165,4 +165,8 @@ _in navitem href:_
 
 > > > > with ANCHOR LINKS works with doubletap on ios and it doesnt scroll!
 
+- FIX: navlinks working also on iOs device without tapping if hover is removed. Still jumping from one section to another. no smooth scroll.
+  > FIX: hover appear with mediaqueries on bigger screens >'tablet';
+- TODO: reveal doesnt work show on iOS devices!!!!
+
 **TRY**: test new library `yarn add --save react-scrollable-anchor`
