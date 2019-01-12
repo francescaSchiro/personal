@@ -50,7 +50,7 @@ class App extends Component {
                   <NavItem
                     onClick={() => scrollToSection(".homeSection")}
                     sectionColor={props => props.theme.color.gray}
-                    href="/#home"
+                    // href="/#home"
                   >
                     Home /
                   </NavItem>
@@ -68,7 +68,7 @@ class App extends Component {
                   <NavItem
                     // onClick={() => scrollToSection(".worksSection")}
                     sectionColor={props => props.theme.color.red}
-                    href="/personal/#works"
+                    href="/personal#works"
                   >
                     Works /
                   </NavItem>
