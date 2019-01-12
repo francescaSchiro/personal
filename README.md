@@ -162,3 +162,7 @@ _in navitem href:_
 
 - `"/#about"` >> opens new http://localhost:3000/#about
 - `"#contacts"` | `"/personal#works"`, >> http://localhost:3000/personal#works --!!!---- **BEST #contacts ** --!!!----
+
+> > > > with ANCHOR LINKS works with doubletap on ios and it doesnt scroll!
+
+**TRY**: test new library `yarn add --save react-scrollable-anchor`
