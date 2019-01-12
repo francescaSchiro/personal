@@ -15,7 +15,9 @@ const About = () => (
         margins={"90px 0 0 -20px"}
         sectionColor={props => props.theme.color.yellow}
       >
-        <Fade left>About</Fade>
+        <Fade left>
+          <div>About</div>
+        </Fade>
       </SectionTitle>
     </SectionTitleContainer>
 
