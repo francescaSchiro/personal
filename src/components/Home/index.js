@@ -8,7 +8,7 @@ import DotWrapper from "./DotWrapper";
 import H1 from "../H1";
 import H3 from "../H3";
 
-import { scrollToSection } from "../../utils";
+// import { scrollToSection } from "../../utils";
 
 const Home = () => (
   <Wrapper className="homeSection" id="home">

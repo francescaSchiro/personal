@@ -51,7 +51,7 @@ class App extends Component {
                     onClick={() => scrollToSection(".homeSection")}
                     sectionColor={props => props.theme.color.gray}
                     type="button"
-                    href="/#home"
+                    href="#home"
                   >
                     Home /
                   </NavItem>
@@ -60,7 +60,7 @@ class App extends Component {
                   <NavItem
                     // onClick={() => scrollToSection(".aboutSection")}
                     sectionColor={props => props.theme.color.yellow}
-                    href="/#about"
+                    href="#about"
                   >
                     About /
                   </NavItem>
@@ -69,7 +69,7 @@ class App extends Component {
                   <NavItem
                     // onClick={() => scrollToSection(".worksSection")}
                     sectionColor={props => props.theme.color.red}
-                    href="/#works"
+                    href="#works"
                   >
                     Works /
                   </NavItem>
@@ -78,7 +78,7 @@ class App extends Component {
                   <NavItem
                     // onClick={() => scrollToSection(".contactsSection")}
                     sectionColor={props => props.theme.color.lightBlue}
-                    href="/#contacts"
+                    href="#contacts"
                   >
                     Contacts /
                   </NavItem>
