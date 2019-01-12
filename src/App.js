@@ -68,7 +68,7 @@ class App extends Component {
                   <NavItem
                     // onClick={() => scrollToSection(".worksSection")}
                     sectionColor={props => props.theme.color.red}
-                    href="#works"
+                    href="/personal/#works"
                   >
                     Works /
                   </NavItem>
