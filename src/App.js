@@ -58,10 +58,13 @@ class App extends Component {
                 </Fade>
                 <Fade left>
                   <NavItem
-                    onClick={() => preventDefault()}
+                    onClick={
+                      (e => e.preventDefault(),
+                      () => scrollToSection(".aboutSection"))
+                    }
                     // onClick={() => scrollToSection(".aboutSection")}
                     sectionColor={props => props.theme.color.yellow}
-                    href="#about"
+                    // href="#about"
                   >
                     About /
                   </NavItem>
