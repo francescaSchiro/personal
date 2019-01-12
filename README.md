@@ -152,4 +152,13 @@ To try:
 
 # !!! on ipad and iphone anchor nav dont work!!!!!\*\* ----
 
-- [ ] ? fixed with `href='#sectionId'` given to navitems <a> andgvind id to sections
+- [ ] ? fixed with `href='#sectionId'` given to navitems <a> and to sections
+
+_in sectionTitleContainer:_
+`id="contacts"`
+`id='#works'` ?????
+
+_in navitem href:_
+
+- `"/#about"` >> opens new http://localhost:3000/#about
+- `"#contacts"` | `"/personal#works"`, >> http://localhost:3000/personal#works --!!!---- **BEST #contacts ** --!!!----

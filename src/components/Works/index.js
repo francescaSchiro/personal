@@ -8,7 +8,7 @@ import CarouselHandmade from "./CarouselHandmade";
 
 const Works = () => (
   <Wrapper>
-    <SectionTitleContainer className="worksSection" id="works">
+    <SectionTitleContainer className="worksSection" id="#works">
       <Zoom>
         <SectionTitle
           margins={"90px 0 0 0"}
