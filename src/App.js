@@ -48,7 +48,7 @@ class App extends Component {
               <NavItemsWrapper>
                 <Fade left>
                   <NavItem
-                    // onClick={() => scrollToSection(".homeSection")}
+                    onClick={() => scrollToSection(".homeSection")}
                     sectionColor={props => props.theme.color.gray}
                     type="button"
                     href="/#home"
