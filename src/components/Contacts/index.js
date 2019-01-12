@@ -6,6 +6,7 @@ import SectionTitleContainer from "./SectionTitleContainer";
 
 const Contacts = () => (
   <Wrapper>
+    <Fade left>Contacts</Fade>
     <SectionTitleContainer className="contactsSection" id="contacts">
       <SectionTitle
         margins={"90px -10px 0 0"}
