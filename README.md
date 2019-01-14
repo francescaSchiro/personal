@@ -180,11 +180,12 @@ _in navitem href:_
 
 **TODO**
 
-- fix top margin in home titles. some devices with lower height overlaps with Logo.
-- make Reveal work on iOS devices!!!!! (or remove animations on iOS devices) scroll not detected? first animations work! and also React reaveal website animations work on ipad! so there must be a way.
-- smooth scroll between sections on iOS devices.
+- [x]fix top margin in home titles. some devices with lower height overlaps with Logo.
+- [x] make Reveal work on iOS devices!!!!! (or remove animations on iOS devices) scroll not detected? first animations work! and also React reaveal website animations work on ipad! so there must be a way. detect if ios device> render without Fade component.
+https://stackoverflow.com/questions/9038625/detect-if-device-is-ios
+- [ ] smooth scroll between sections on iOS devices.
 
-## try AOS!!!! see if it works on iOS devices:
+## try AOS!!!! see if it works on iOS devices: DID NOT WORK
 
 - `yarn add aos --save`
 - Add script and init AOS before the closing </body> tag:
@@ -198,7 +199,7 @@ _in navitem href:_
 
 DOESNT WORK : `yarn remove aos`
 
-## fix smooth scroll on IOS:
+## fix smooth scroll on IOS: DID NOT WORK
 
 - https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2
 - `yarn add jquery --save` in file I want to use it: `import $ from 'jquery';`

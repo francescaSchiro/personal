@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   /*distance from nav*/
-  margin-top: 15vh;
+  margin-top: 90px;
   overflow: hidden;
 
   /* border: 2px solid rebeccapurple; */

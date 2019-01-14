@@ -1,15 +1,10 @@
-import styled from "styled-components";
-
-// import { getBgGradient } from '../../utils';
-/* ${props => getBgGradient(props.theme.color.blue, props.theme.color.backgroundColor)}; */
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  /* height:100%; */
   min-height: 100%;
   width: 100%;
-  border: 2px solid var(--blue);
-  /* scroll-snap-align: start; */
-  /* height: 100vh; */
+  border: 2px solid blueviolet;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

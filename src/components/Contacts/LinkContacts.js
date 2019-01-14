@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Link = styled.a`
+const LinkContacts = styled.a`
   padding: 20px;
 
   font-family: ${props => props.theme.font.family.paragraph};
@@ -20,7 +20,7 @@ const Link = styled.a`
   }
 `;
 
-export default Link;
+export default LinkContacts;
 
 //LINK to just open: https://docdro.id/U6bDALF"
 // to DOWNLOAD : https://github.com/francescaSchiro/MyFiles/blob/master/CV.pdf?raw=true
