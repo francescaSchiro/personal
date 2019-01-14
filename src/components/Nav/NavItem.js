@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { getBreakpoint, checkIfAppleDevice } from "../../utils";
 
@@ -13,20 +13,20 @@ const NavItem = styled.a`
   ${
     checkIfAppleDevice
       ? ""
-      : `
-  &:hover {
-      font-weight: ${props => props.stheme.font.weight.bold};
-      &:before {
-        content: "";
-        position: absolute;
-        top: 5px;
-        width: 100%;
-        height: 80%;
-        background: ${props => props.sectionColor};
-        z-index: -1;
-      }
-    }
-  `
+      : css`
+          &:hover {
+            font-weight: ${props => props.theme.font.weight.bold};
+            &:before {
+              content: "";
+              position: absolute;
+              top: 5px;
+              width: 100%;
+              height: 80%;
+              background: ${props => props.sectionColor};
+              z-index: -1;
+            }
+          }
+        `
   }
   
   /* PUT BACK OVER when not touch*/
