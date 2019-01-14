@@ -109,6 +109,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # !!! **add to css module for smooth scrolling like in iOS** -------------
 
 `overflow-y: scroll;`
+
 `-webkit-overflow-scrolling:touch;`
 
 ---> _ADDED to AppWrapper.js_
@@ -132,8 +133,10 @@ To try:
 - `transition: all 0.2s ease-in-out;`
 - `overflow-x: scroll;`
 - `overflow-x: scroll;`
+
   `overflow-y: hidden;` in @mediaqueries
 - `scroll-snap-type: mandatory;`
+
   `scroll-snap-type: x mandatory`(in @mediaqueries) **to remove snapping**
 - LEFT: `white-space: nowrap;`
   ---> in _CardWrapper.js_
@@ -142,7 +145,9 @@ To try:
 * **Added:**
 
   - `/* for smooth scrolling like in iOS */`
+
     `overflow-x: scroll;`
+
     `-webkit-overflow-scrolling: touch;`
 
 - [ ] remove transition property on react reveal children;
@@ -154,8 +159,10 @@ To try:
 
 - [ ] ? fixed with `href='#sectionId'` given to navitems <a> and to sections
 
-_in sectionTitleContainer:_
+*in sectionTitleContainer:*
+
 `id="contacts"`
+
 `id='#works'` !!! DOESNT WORK!!!
 
 _in navitem href:_
@@ -173,6 +180,55 @@ _in navitem href:_
 
 **TODO**
 
-- make Reveal work on iOS devices!!!!!
-- or try AOS!!!! see if it works on iOS devices
+- fix top margin in home titles. some devices with lower height overlaps with Logo.
+- make Reveal work on iOS devices!!!!! (or remove animations on iOS devices) scroll not detected? first animations work! and also React reaveal website animations work on ipad! so there must be a way.
 - smooth scroll between sections on iOS devices.
+
+## try AOS!!!! see if it works on iOS devices:
+
+- `yarn add aos --save`
+- Add script and init AOS before the closing </body> tag:
+
+```html
+<script src="bower_components/aos/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+```
+
+DOESNT WORK : `yarn remove aos`
+
+## fix smooth scroll on IOS:
+
+- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2
+- `yarn add jquery --save` in file I want to use it: `import $ from 'jquery';`
+
+```javascript
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
+```

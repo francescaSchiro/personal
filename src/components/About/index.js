@@ -1,30 +1,30 @@
-import React from "react";
-import Fade from "react-reveal/Fade";
-import Wrapper from "./Wrapper";
-import SectionTitleContainer from "./SectionTitleContainer";
-import PContainer from "./PContainer";
-import SectionTitle from "../SectionTitle";
-import P from "../P";
-import LinkContainer from "./LinkContainer";
-import Link from "../Link";
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Wrapper from './Wrapper';
+import SectionTitleContainer from './SectionTitleContainer';
+import PContainer from './PContainer';
+import SectionTitle from '../SectionTitle';
+import P from '../P';
+import LinkContainer from './LinkContainer';
+import Link from '../Link';
 
 const About = () => (
   <Wrapper>
-    <SectionTitleContainer className="aboutSection" id="about">
-      <SectionTitle
-        margins={"90px 0 0 -20px"}
-        sectionColor={props => props.theme.color.yellow}
-      >
-        <Fade left>
-          <div>About</div>
-        </Fade>
-      </SectionTitle>
+    <SectionTitleContainer className='aboutSection' id='about'>
+      <Fade left>
+        <SectionTitle
+          margins={'90px 0 0 -20px'}
+          sectionColor={props => props.theme.color.yellow}
+        >
+          About
+        </SectionTitle>
+      </Fade>
     </SectionTitleContainer>
 
     <Fade right>
       <PContainer>
         <P sectionColor={props => props.theme.color.yellow}>
-          {" "}
+          {' '}
           Ciao. <br />
           My Name is Francesca,
           <br />
@@ -43,9 +43,9 @@ const About = () => (
       <Fade>
         <Link
           sectionColor={props => props.theme.color.yellow}
-          href="https://docdro.id/U6bDALF"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://docdro.id/U6bDALF'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           Curious? Take a look at my CV
         </Link>

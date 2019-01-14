@@ -1,10 +1,10 @@
 /*------ Custom CSS Variables -------*/
 
 /*------Import Google Fonts ------------*/
-@import url("https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i");
+/* @import url("https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
-
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900"); */
+/* 
 :root {
   --red: #f78888;
   --yellow: #f3d250;
@@ -22,7 +22,7 @@
   --y: #f5ce28;
   --k: #000000;
   --beige: #f2eee2;
-}
+} */
 /*------RESET------------*/
 
 html,
@@ -99,8 +99,9 @@ summary {
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+ 
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 article,

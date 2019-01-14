@@ -14,7 +14,7 @@ const Home = () => (
   <Wrapper className="homeSection" id="home">
     <Logo />
     <NameWrapper>
-      <Fade bottom cascade delay={1000}>
+      <Fade bottom delay={1000}>
         <H1 home sectionColor={props => props.theme.color.gray}>
           Francesca Schiro
         </H1>
