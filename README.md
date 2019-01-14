@@ -135,9 +135,11 @@ To try:
 - `overflow-x: scroll;`
 
   `overflow-y: hidden;` in @mediaqueries
+
 - `scroll-snap-type: mandatory;`
 
   `scroll-snap-type: x mandatory`(in @mediaqueries) **to remove snapping**
+
 - LEFT: `white-space: nowrap;`
   ---> in _CardWrapper.js_
 - `/* scroll-snap-align: start; */`
@@ -159,7 +161,7 @@ To try:
 
 - [ ] ? fixed with `href='#sectionId'` given to navitems <a> and to sections
 
-*in sectionTitleContainer:*
+_in sectionTitleContainer:_
 
 `id="contacts"`
 
@@ -182,7 +184,7 @@ _in navitem href:_
 
 - [x]fix top margin in home titles. some devices with lower height overlaps with Logo.
 - [x] make Reveal work on iOS devices!!!!! (or remove animations on iOS devices) scroll not detected? first animations work! and also React reaveal website animations work on ipad! so there must be a way. detect if ios device> render without Fade component.
-https://stackoverflow.com/questions/9038625/detect-if-device-is-ios
+      https://stackoverflow.com/questions/9038625/detect-if-device-is-ios
 - [ ] smooth scroll between sections on iOS devices.
 
 ## try AOS!!!! see if it works on iOS devices: DID NOT WORK
@@ -233,3 +235,12 @@ DOESNT WORK : `yarn remove aos`
     });
     </script>
 ```
+
+## FIX:
+
+- [x] CardTitle always visible.
+- [x] NavItem hover effect disabled on AppleDevices.
+- [ ] Contacts Wrapper
+- [ ] Contacts mailto form
+- [ ] Contacts Form implementation
+- [ ] CardModal
