@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const LinksWrapper = styled.div`
   
-  
+  width: 40vw;
   border: 2px solid black;
   white-space: pre-wrap;
 
@@ -13,8 +13,6 @@ const LinksWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  /* position: relative; */
-  overflow: hidden;
 
 
 

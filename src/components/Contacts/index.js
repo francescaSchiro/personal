@@ -10,7 +10,9 @@ import LinksWrapper from './LinksWrapper';
 import MailFlipForm from './MailFlipForm';
 import BodyWrapper from './BodyWrapper';
 import LinkContacts from './LinkContacts';
+import LinkWrapper from './LinkWrapper';
 import H3 from '../H3';
+import Footer from '../Footer';
 
 const Contacts = () => (
   <Wrapper>
@@ -37,7 +39,7 @@ const Contacts = () => (
       <BodyWrapper>
         <LinksWrapper>
           <H3>You can find me on:</H3>
-          <div style={{ marginTop: '20px' }}>
+          <LinkWrapper id= {'LinkWrapper'} style={{ marginTop: '20px' }}>
             <i className='fab fa-github-square' />
             <LinkContacts
               href='https://github.com/francescaSchiro'
@@ -48,7 +50,7 @@ const Contacts = () => (
               {' '}
               Git Hub{' '}
             </LinkContacts>
-          </div>
+          </LinkWrapper>
           <div style={{ marginTop: '20px' }}>
             <i className='fab fa-behance-square' />
             <LinkContacts
@@ -73,10 +75,10 @@ const Contacts = () => (
               Linked In{' '}
             </LinkContacts>
           </div>
-          <MailFlipForm>Mail me </MailFlipForm>
         </LinksWrapper>
+          <MailFlipForm>Mail me </MailFlipForm>
       </BodyWrapper>
-  
+      <Footer>Francesca Schiro | Front End & Graphic Designer | Tutti i diritti riservati © 2019</Footer>
   </Wrapper>
 );
 
