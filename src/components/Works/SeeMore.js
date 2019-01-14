@@ -5,6 +5,7 @@ const SeeMore = styled.a`
   width:75%;
   margin:0 auto;
   display: none;
+  left: 12.5%;
   bottom: 10%;
   text-shadow: 2px 2px 8px black;
   text-align: center;
