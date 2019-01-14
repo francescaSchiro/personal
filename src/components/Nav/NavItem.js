@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { getBreakpoint } from "../../utils";
+import { getBreakpoint, checkIfAppleDevice } from "../../utils";
 
 const NavItem = styled.a`
   all: unset;
@@ -10,13 +10,12 @@ const NavItem = styled.a`
   /* border: 2px solid orange; */
   font-size: ${props => props.theme.font.size.l};
   
-  
-  /* PUT BACK OVER when not touch*/
-  @media screen and (min-width: ${getBreakpoint("tablet")}) {
-    /* regole CSS */
-    font-size: ${props => props.theme.font.size.xl};
-    &:hover {
-      font-weight: ${props => props.theme.font.weight.bold};
+  ${
+    checkIfAppleDevice
+      ? ""
+      : `
+  &:hover {
+      font-weight: ${props => props.stheme.font.weight.bold};
       &:before {
         content: "";
         position: absolute;
@@ -27,6 +26,14 @@ const NavItem = styled.a`
         z-index: -1;
       }
     }
+  `
+  }
+  
+  /* PUT BACK OVER when not touch*/
+  @media screen and (min-width: ${getBreakpoint("tablet")}) {
+    /* regole CSS */
+    font-size: ${props => props.theme.font.size.xl};
+    
   }
   `;
 
