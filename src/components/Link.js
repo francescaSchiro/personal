@@ -7,6 +7,10 @@ const Link = styled.a`
   font-size: ${props => props.theme.font.size.xxl};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.sectionColor};
+  
+  /* for IE11 and IE10 */
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
 
   ::-moz-selection {
     /* Code for Firefox */
