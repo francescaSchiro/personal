@@ -93,7 +93,7 @@ class App extends Component {
                 <Fade right>
                   {lightIcon ? (
                     <ButtonTheme onClick={this.switchToDarkTheme}>
-                      <i className="fas fa-lightbulb" alt="dark" />
+                      <i className="fas fa-lightbulb" alt="dark"  style={{color:'#1A1A1A', opacity: '0.7'}} />
                     </ButtonTheme>
                   ) : (
                     <ButtonTheme onClick={this.switchToDefaultTheme}>

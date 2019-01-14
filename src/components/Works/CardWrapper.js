@@ -4,6 +4,7 @@ import { getBreakpoint } from "../../utils";
 import Overlay from "./Overlay";
 import CardTitle from "./CardTitle";
 import SeeMore from "./SeeMore";
+import CSub from './CSub';
 
 const CardWrapper = styled.li`
   position: relative;
@@ -36,6 +37,13 @@ const CardWrapper = styled.li`
   }
 
   &:hover ${SeeMore} {
+    display: block;
+    cursor: pointer;
+
+    z-index: 2;
+  }
+
+  &:hover ${CSub} {
     display: block;
     cursor: pointer;
 

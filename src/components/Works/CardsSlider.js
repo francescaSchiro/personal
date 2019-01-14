@@ -5,7 +5,10 @@ const CardsSlider = styled.ul`
   position: relative;
   width: 100vw;
   border: 2px solid red;
-  /* transition: all 0.2s ease-in-out; */
+  
+  display: block;
+  white-space: nowrap;
+  
 
   /* ------------SCROLL UI ----------*/
 
@@ -34,37 +37,22 @@ const CardsSlider = styled.ul`
   @media screen and (max-width: ${getBreakpoint(
       "desktop"
     )}) and (min-width: ${getBreakpoint("tablet")}) {
-    /* scroll-snap-type: mandatory;
-    scroll-snap-type: x mandatory; */
     /* 5 vw more than card height to detatch scrollbar */
     height: 30vw;
-    display: block;
-    white-space: nowrap;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
+
   }
   @media screen and (max-width: ${getBreakpoint(
       "tablet"
     )}) and (min-width: 600px) {
-    /* scroll-snap-type: mandatory;
-    scroll-snap-type: x mandatory; */
     /* 5 vw more than card height to detach scrollbar */
     height: 45vw;
-    display: block;
-    white-space: nowrap;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
+
   }
 
   @media screen and (max-width: 600px) {
-    /* scroll-snap-type: mandatory;
-    scroll-snap-type: x mandatory; */
     /* 10 vw more than card height to detatch scrollbar */
     height: 100vw;
-    display: block;
-    white-space: nowrap;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
+
   }
 
   /* for smooth scrolling like in iOS */

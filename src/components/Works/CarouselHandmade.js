@@ -4,7 +4,8 @@ import CardsSlider from "./CardsSlider";
 import CardWrapper from "./CardWrapper";
 import CardTitle from "./CardTitle";
 // import CTitle from './CTitle';
-// import CSub from './CSub';
+import CSub from './CSub';
+
 import DotRight from "./DotRight";
 import Overlay from "./Overlay";
 import SeeMore from "./SeeMore";
@@ -20,8 +21,9 @@ class CarouselHandmade extends Component {
           {cards.map(el => (
             <CardWrapper key={el.id} coverUrl={el.coverUrl}>
               <CardTitle>{el.title}</CardTitle>
-              {/* <CSub>{el.description}</CSub> */}
               <Overlay />
+              
+              <CSub>{el.description}</CSub>
               <SeeMore href={el.more} target="_blank">
                 See more...
               </SeeMore>

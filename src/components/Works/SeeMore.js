@@ -5,6 +5,8 @@ const SeeMore = styled.a`
   /* all:unset; */
   position: absolute;
   bottom: 10%;
+  text-shadow: 2px 2px 8px black;
+
 
   z-index: 2;
 

@@ -7,10 +7,12 @@ const CardTitle = styled.div`
   border: 3px solid ${props=> props.theme.color.red};
 
   font-family: ${props => props.theme.font.family.titles};
-  font-size: ${props => props.theme.font.size.xl};
+  font-size: ${props => props.theme.font.size.xxl};
   color: white;
   padding: 20px;
   background-color: rgba(0,0,0, 0.4);
+  text-shadow: 2px 2px 8px black;
+
   
 
   &:hover {
