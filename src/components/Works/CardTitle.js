@@ -3,6 +3,9 @@ import styled from "styled-components";
 const CardTitle = styled.div`
   position:absolute;
   display:none;
+  bottom: 40%;
+  z-index: 2;
+  text-align: center;
   
   border: 3px solid ${props=> props.theme.color.red};
 

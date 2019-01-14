@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const SeeMore = styled.a`
-  display: none;
-  /* all:unset; */
   position: absolute;
+  display: none;
   bottom: 10%;
   text-shadow: 2px 2px 8px black;
+  text-align: center;
 
 
   z-index: 2;

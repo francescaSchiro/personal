@@ -4,9 +4,8 @@ import { getBreakpoint } from '../../utils';
 
 const CSub = styled.div`
 
+position: absolute;
   display: none;
-  /* all:unset; */
-  position: absolute;
   bottom: 20%;
   white-space: pre-wrap;
   line-height: 1.2em;
@@ -18,7 +17,6 @@ const CSub = styled.div`
 
   font-family: ${props => props.theme.font.family.paragraph};
   font-size: ${props => props.theme.font.size.xl};
-  /* font-weight: ${props => props.theme.font.weight.normal}; */
   color: white;
 
   @media screen and (max-width: ${getBreakpoint('desktop')} ) and (min-width: ${getBreakpoint('tablet')})  {
