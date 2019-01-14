@@ -8,7 +8,6 @@ import CSub from './CSub';
 
 const CardWrapper = styled.li`
   position: relative;
-  /* margin: 0 10px 0 10px; */
 
   background-image: url(${props => props.coverUrl});
   background-position: center;

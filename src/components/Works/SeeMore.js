@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const SeeMore = styled.a`
   position: absolute;
+  width:75%;
+  margin:0 auto;
   display: none;
   bottom: 10%;
   text-shadow: 2px 2px 8px black;

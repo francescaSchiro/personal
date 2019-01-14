@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 const CardTitle = styled.div`
   position:absolute;
+  width:80%;
+  margin: 0 auto;
   display:none;
-  bottom: 40%;
+  bottom: 45%;
   z-index: 2;
   text-align: center;
   
