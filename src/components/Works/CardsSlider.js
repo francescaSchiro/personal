@@ -12,6 +12,8 @@ const CardsSlider = styled.ul`
   /* for smooth scrolling like in iOS */
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
 
   /* ------------SCROLL UI ----------*/
 

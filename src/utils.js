@@ -19,7 +19,7 @@ export const cards = [
   },
   {
     id: 2,
-    title: 'Website redesign',
+    title: 'UrbanGuide',
     coverUrl:
       'https://mir-s3-cdn-cf.behance.net/project_modules/1400/ea772750465831.58d15bdeb5e35.png',
     description: 'Website redesign for CityHub srls.',
@@ -79,7 +79,7 @@ export const cards = [
   },
   {
     id: 9,
-    title: '18 days in Egypt',
+    title: '18DaysInEgypt',
     coverUrl:
       'https://mir-s3-cdn-cf.behance.net/projects/202/13197855.5483be1d2cbe0.jpg',
     description: `Unconventional video essay about the social media 18DaysInEgypt.`,
@@ -95,10 +95,10 @@ export const cards = [
   },
   {
     id: 11,
-    title: 'Brisbane parallelisms',
+    title: 'Parallelisms',
     coverUrl:
       'https://mir-s3-cdn-cf.behance.net/projects/202/15915277.548a3e5938118.jpg',
-    description: `Symmetrical video to show the beauty of the city.`,
+    description: `Symmetrical video to show the beauty of the city Brisbane.`,
     more: 'https://www.behance.net/gallery/15915277/Brisbane-parallelisms'
   },
   {
@@ -138,7 +138,11 @@ export const checkIfAppleDevice =
   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 export const scrollRight = elId => {
-  document.getElementById(`${elId}`).scrollLeft = 400;
+  document.getElementById(`${elId}`).scrollLeft += 400;
+};
+
+export const scrollLeft = elId => {
+  document.getElementById(`${elId}`).scrollLeft += -400;
 };
 /**
  * @name - scrollToView

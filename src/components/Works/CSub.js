@@ -1,11 +1,12 @@
-import styled from "styled-components";
-import { getBreakpoint } from '../../utils';
+import styled, { css } from "styled-components";
+import { getBreakpoint, isIE } from '../../utils';
 
 
 const CSub = styled.div`
 
 position: absolute;
   display: none;
+  left:0;
   bottom: 20%;
   white-space: pre-wrap;
   line-height: 1.2em;
@@ -48,6 +49,16 @@ position: absolute;
     color: ${props => props.theme.color.backgroundColor};
     background: ${props => props.theme.color.red};
   }
+
+  ${isIE
+    ? css`
+       display: block;
+    cursor: pointer;
+
+    z-index: 2;
+      `
+    : ''}
+ 
 `;
 
 

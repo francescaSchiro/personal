@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const DotRight = styled.div`
-  position: absolute;
-  top: calc(50% - 80px);
+  /* position: absolute; */
+  /* top: calc(50% - 80px); */
   right: 0;
   width: 15px;
   height: 15px;
@@ -20,16 +20,13 @@ const DotRight = styled.div`
 
   cursor: pointer;
   @keyframes scrollRight {
-    0% {
+    0%,
+    20% {
       transform: rotate(90deg) translateY(0) scaleY(1);
     }
     100% {
       transform: rotate(90deg) translateY(50px) scaleY(2);
-      opacity: .5;
-    }
-    100% {
-      transform: rotate(90deg) translateY(0px) scaleY(1);
-      opacity: .5;
+      opacity: 1;
     }
   }
 `;

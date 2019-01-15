@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { getBreakpoint } from '../../utils';
+import styled, { css } from 'styled-components';
+import { getBreakpoint, isIE } from '../../utils';
 
 const Overlay = styled.div`
   position: absolute;
@@ -32,6 +32,18 @@ const Overlay = styled.div`
     width: 90vw;
     height: 90vw;
   }
+
+  ${isIE
+    ? css`
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 1;
+      `
+    : ''}
 `;
 
 export default Overlay;
