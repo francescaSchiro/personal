@@ -35,19 +35,21 @@ const Contacts = () => (
         </Fade>
       )}
     </SectionTitleContainer>
-  
+    {checkIfAppleDevice ? (
       <BodyWrapper>
-
         <LinksWrapper>
           <H3 contacts>You can find me on:</H3>
-          <LinkWrapper id= {'LinkWrapper'}>
-            <i className='fab fa-github-square'/>
+          <LinkWrapper id={'LinkWrapper'}>
+            <i className='fab fa-github-square' />
             <LinkContacts
               href='https://github.com/francescaSchiro'
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
-            > Git Hub </LinkContacts>
+            >
+              {' '}
+              Git Hub{' '}
+            </LinkContacts>
           </LinkWrapper>
           <LinkWrapper>
             <i className='fab fa-behance-square' />
@@ -56,7 +58,9 @@ const Contacts = () => (
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
-            >Behance</LinkContacts>
+            >
+              Behance
+            </LinkContacts>
           </LinkWrapper>
           <LinkWrapper>
             <i className='fab fa-linkedin' />
@@ -65,30 +69,95 @@ const Contacts = () => (
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
-            >Linked In</LinkContacts>
+            >
+              Linked In
+            </LinkContacts>
           </LinkWrapper>
         </LinksWrapper>
         <LinksWrapper>
           <H3 contacts>Or contact me even just to say hi!</H3>
-          <LinkWrapper mail id= {'mail'}>
+          <LinkWrapper mail id={'mail'}>
             <i className='fas fa-envelope-square' />
             <LinkContacts
-              mailto= 'francesca_schiro@yahoo.it'
+              mailto='francesca_schiro@yahoo.it'
               href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing"'
               // target='_blank'
               // rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
-            > Email me </LinkContacts>
+            >
+              {' '}
+              Email me{' '}
+            </LinkContacts>
           </LinkWrapper>
         </LinksWrapper>
-       
       </BodyWrapper>
-      <Footer>
-        Francesca Schiro | Front End & Graphic Designer | Tutti i diritti riservati © 2019
-      </Footer>
+    ) : (
+      <Fade right>
+        <BodyWrapper>
+          <LinksWrapper>
+            <H3 contacts>You can find me on:</H3>
+            <LinkWrapper id={'LinkWrapper'}>
+              <i className='fab fa-github-square' />
+              <LinkContacts
+                href='https://github.com/francescaSchiro'
+                target='_blank'
+                rel='noopener noreferrer'
+                sectionColor={props => props.theme.color.lightBlue}
+              >
+                {' '}
+                Git Hub{' '}
+              </LinkContacts>
+            </LinkWrapper>
+            <LinkWrapper>
+              <i className='fab fa-behance-square' />
+              <LinkContacts
+                href='https://www.behance.net/francescaschiro'
+                target='_blank'
+                rel='noopener noreferrer'
+                sectionColor={props => props.theme.color.lightBlue}
+              >
+                Behance
+              </LinkContacts>
+            </LinkWrapper>
+            <LinkWrapper>
+              <i className='fab fa-linkedin' />
+              <LinkContacts
+                href='www.linkedin.com/in/francesca-schiro'
+                target='_blank'
+                rel='noopener noreferrer'
+                sectionColor={props => props.theme.color.lightBlue}
+              >
+                Linked In
+              </LinkContacts>
+            </LinkWrapper>
+          </LinksWrapper>
+          <LinksWrapper>
+            <H3 contacts>Or contact me even just to say hi!</H3>
+            <LinkWrapper mail id={'mail'}>
+              <i className='fas fa-envelope-square' />
+              <LinkContacts
+                mailto='francesca_schiro@yahoo.it'
+                href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing"'
+                // target='_blank'
+                // rel='noopener noreferrer'
+                sectionColor={props => props.theme.color.lightBlue}
+              >
+                {' '}
+                Email me{' '}
+              </LinkContacts>
+            </LinkWrapper>
+          </LinksWrapper>
+        </BodyWrapper>
+      </Fade>
+    )}
+
+    <Footer>
+      Francesca Schiro | Front End & Graphic Designer | Tutti i diritti
+      riservati © 2019
+    </Footer>
   </Wrapper>
 );
 
 export default Contacts;
 
-          // <MailFlipForm>Mail me </MailFlipForm>
+// <MailFlipForm>Mail me </MailFlipForm>
