@@ -76,7 +76,7 @@ const Contacts = () => (
         </LinksWrapper>
         <LinksWrapper>
           <H3 contacts>Or contact me even just to say hi!</H3>
-          <LinkWrapper mail id={'mail'} mailto='francesca_schiro@yahoo.it'>
+          <LinkWrapper mail id={'mail'} href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing'>
             <i className='fas fa-envelope-square' />
             <LinkContacts
               href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing'
