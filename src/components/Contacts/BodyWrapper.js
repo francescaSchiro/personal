@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const BodyWrapper = styled.div`
   width: 100%;
-  padding:  0 10vw;
+  padding:  0 5vw;
   
   border: 2px solid lightblue;
   white-space: pre-wrap;
