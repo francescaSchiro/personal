@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { getBreakpoint, checkIfAppleDevice } from "../../utils";
+import { getBreakpoint, checkIfAppleDevice, isIE } from "../../utils";
 
 const NavItem = styled.a`
   all: unset;
@@ -11,7 +11,7 @@ const NavItem = styled.a`
   font-size: ${props => props.theme.font.size.l};
   
   ${
-    checkIfAppleDevice
+    (checkIfAppleDevice || isIE)
       ? ""
       : css`
           &:hover {

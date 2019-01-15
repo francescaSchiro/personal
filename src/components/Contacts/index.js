@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import { checkIfAppleDevice } from '../../utils';
+import { checkIfAppleDevice, isIE } from '../../utils';
 
 import Wrapper from './Wrapper';
 import Footer from './Footer';
@@ -17,7 +17,7 @@ import H3 from '../H3';
 const Contacts = () => (
   <Wrapper>
     <SectionTitleContainer className='contactsSection' id='contacts'>
-      {checkIfAppleDevice ? (
+      {(checkIfAppleDevice || isIE) ? (
         <SectionTitle
           margins={'80px -10px 0 0'}
           sectionColor={props => props.theme.color.lightBlue}
@@ -35,7 +35,7 @@ const Contacts = () => (
         </Fade>
       )}
     </SectionTitleContainer>
-    {checkIfAppleDevice ? (
+    {(checkIfAppleDevice || isIE) ? (
       <BodyWrapper>
         <LinksWrapper>
           <H3 contacts>You can find me on:</H3>

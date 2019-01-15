@@ -127,7 +127,13 @@ export const cards = [
   }
 ];
 
-// returns true or false
+
+//check if browser is internet Explorer: returns tru or false
+export const isIE =
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  navigator.userAgent.indexOf("MSIE ") > -1 || navigator.userAgent.indexOf("Trident/") > -1;
+
+// returns true or false 
 export const checkIfAppleDevice =
   /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 

@@ -7,13 +7,13 @@ import SectionTitle from '../SectionTitle';
 import P from '../P';
 import LinkContainer from './LinkContainer';
 import Link from '../Link';
-import { checkIfAppleDevice } from '../../utils';
+import { checkIfAppleDevice, isIE } from '../../utils';
 
 // { checkIfAppleDevice && <div>asfkgfkwqfufgqiwu</div> }
 
 const About = () => (
   <Wrapper>
-    {checkIfAppleDevice ? (
+    {(checkIfAppleDevice || isIE) ? (
       // if apple device
       <React.Fragment>
         <SectionTitleContainer className='aboutSection' id='about'>

@@ -5,12 +5,12 @@ import SectionTitle from '../SectionTitle';
 import SectionTitleContainer from './SectionTitleContainer';
 // import CarouselSlider from './CarouselSlider';
 import CarouselHandmade from './CarouselHandmade';
-import { checkIfAppleDevice } from '../../utils';
+import { checkIfAppleDevice, isIE } from '../../utils';
 
 const Works = () => (
   <Wrapper>
     <SectionTitleContainer className='worksSection' id='works'>
-      {checkIfAppleDevice ? (
+      {(checkIfAppleDevice || isIE) ? (
         <SectionTitle
           margins={'90px 0 0 0'}
           sectionColor={props => props.theme.color.red}
