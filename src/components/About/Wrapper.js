@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-// import { getBgGradient } from '../../utils';
-/* ${props => getBgGradient(props.theme.color.yellow, props.theme.color.red)}; */
+import { getBreakpoint } from '../../utils';
 
 const Wrapper = styled.div`
 /* min-height: 100%;
-  height: 100vh; */
+  
   width: 100%;
   /* border: 2px solid yellow; */
   /* height: 100vh; */
@@ -15,8 +14,11 @@ const Wrapper = styled.div`
 
   align-items: center;
 
-  /* position: relative; */
   overflow: hidden;
+  @media screen and (min-width: ${getBreakpoint("tablet")}) {
+    height: 100vh; 
+    
+  }
 `;
 
 export default Wrapper;

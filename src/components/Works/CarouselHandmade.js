@@ -6,7 +6,7 @@ import CardTitle from "./CardTitle";
 // import CTitle from './CTitle';
 import CSub from './CSub';
 
-import DotRight from "./DotRight";
+// import DotRight from "./DotRight";
 import Overlay from "./Overlay";
 import SeeMore from "./SeeMore";
 
@@ -29,7 +29,6 @@ class CarouselHandmade extends Component {
               </SeeMore>
             </CardWrapper>
           ))}
-          <DotRight onClick={() => scrollRight("slider")} />
         </CardsSlider>
       </>
     );
@@ -37,3 +36,4 @@ class CarouselHandmade extends Component {
 }
 
 export default CarouselHandmade;
+/* <DotRight onClick={() => scrollRight("slider")} /> */

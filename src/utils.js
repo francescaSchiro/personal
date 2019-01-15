@@ -74,7 +74,7 @@ export const cards = [
 export const checkIfAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 export const scrollRight = (elId) => {
-  document.getElementById(`${elId}`).scrollLeft = 50;
+  document.getElementById(`${elId}`).scrollLeft = 400;
 }
 /**
  * @name - scrollToView

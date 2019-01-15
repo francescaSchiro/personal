@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// import { getBgGradient } from '../../utils';
-/* ${props => getBgGradient(props.theme.color.yellow, props.theme.color.red)}; */
 
 const LinkContainer = styled.div`
   width: 100%;

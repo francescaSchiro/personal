@@ -20,14 +20,16 @@ const DotRight = styled.div`
 
   cursor: pointer;
   @keyframes scrollRight {
-    0%,
-    20% {
+    0% {
       transform: rotate(90deg) translateY(0) scaleY(1);
     }
-
     100% {
       transform: rotate(90deg) translateY(50px) scaleY(2);
-      opacity: 0;
+      opacity: .5;
+    }
+    100% {
+      transform: rotate(90deg) translateY(0px) scaleY(1);
+      opacity: .5;
     }
   }
 `;
