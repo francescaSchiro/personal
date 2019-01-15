@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* padding: 10vw; */
 
   @media screen and (min-width: ${getBreakpoint("tablet")}) {
     height: 100vh; 

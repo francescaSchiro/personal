@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
-  width: 100%;
+  width: 100vw;
   /* height:100%; */
   /* flex:1; */
   /* border: 2px solid black; */
