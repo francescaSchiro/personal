@@ -4,7 +4,7 @@ export const cards = [
     title: 'Lomellina',
     coverUrl:
       'https://mir-s3-cdn-cf.behance.net/projects/202/fa95df74029113.Y3JvcCwxMjc0LDk5Niw4NSwxMg.jpg',
-    description: "A web interface to help exploring Vigevano's Territory",
+    description: "A web interface to help exploring Vigevano's Territory.",
     more:
       'https://www.behance.net/gallery/74029113/Exploring-Vigevanos-Territory'
   },
@@ -14,7 +14,7 @@ export const cards = [
     coverUrl:
       'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9d058d46904857.586a27a7b7a94.png',
     description:
-      'Event identity and communication for Happening - Art, Music & Drinks',
+      'Event communication for Happening - Art, Music & Drinks.',
     more: 'https://www.behance.net/gallery/46904857/Happening-Art-Music-Drinks'
   },
   {
@@ -63,19 +63,77 @@ export const cards = [
   },
   {
     id: 7,
-    title: 'Cat',
+    title: 'GMBLN',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/15877557.548a30fb2aa73.png',
+    description: "Digital magazine for Milan's neighborhood: Giambellino.",
+    more: 'https://www.behance.net/gallery/15877557/GMBLN'
+  },
+  {
+    id: 8,
+    title: 'WND',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/1066961.5447920b8d2d6.png',
+    description: `Wanna Design: a webzine for "designers wanna be."`,
+    more: 'https://www.behance.net/gallery/1066961/WANNA-D-website'
+  },
+  {
+    id: 9,
+    title: '18 days in Egypt',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/13197855.5483be1d2cbe0.jpg',
+    description: `Unconventional video essay about the social media 18DaysInEgypt.`,
+    more: 'https://www.behance.net/gallery/13197855/18-DAYS-IN-EGYPT'
+  },
+  {
+    id: 10,
+    title: 'AIC',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/72485446993361.Y3JvcCw4NTQsNjY5LDI1NSww.jpg',
+    description: `Awareness Campaign for AiC.`,
+    more: 'https://www.behance.net/gallery/46993361/Campagna-informativa-AiC'
+  },
+  {
+    id: 11,
+    title: 'Brisbane parallelisms',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/15915277.548a3e5938118.jpg',
+    description: `Symmetrical video to show the beauty of the city.`,
+    more: 'https://www.behance.net/gallery/15915277/Brisbane-parallelisms'
+  },
+  {
+    id: 12,
+    title: 'UNiversITÀ',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/894633.54453ebf1fa15.jpg',
+    description: `Postcard and posters about public univerisy budget's cuts.`,
+    more: 'https://www.behance.net/gallery/894633/DesignNOSTOP'
+  },
+  {
+    id: 13,
+    title: 'Mediterraneo',
+    coverUrl:
+      'https://mir-s3-cdn-cf.behance.net/projects/202/894763.54453f4f036fc.jpg',
+    description: `Video to highlight the eclectic spirit of the Mediterranean.`,
+    more: 'https://www.behance.net/gallery/894763/Mediterraneo'
+  },
+  {
+    id: 14,
+    title: '?',
     coverUrl: 'https://404store.com/2017/08/15/4949794-random-image.jpg',
-    description: 'This is a random drownig cat',
+    description:
+      'This is just a random drowning cat. Thank you for making it this far.',
     more: 'https://404store.com/2017/08/15/4949794-random-image.jpg'
   }
 ];
 
 // returns true or false
-export const checkIfAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+export const checkIfAppleDevice =
+  /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-export const scrollRight = (elId) => {
+export const scrollRight = elId => {
   document.getElementById(`${elId}`).scrollLeft = 400;
-}
+};
 /**
  * @name - scrollToView
  * @description - function to call on nav Item Click to scroll to section

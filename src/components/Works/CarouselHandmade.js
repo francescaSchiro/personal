@@ -10,7 +10,7 @@ import CSub from './CSub';
 import Overlay from "./Overlay";
 import SeeMore from "./SeeMore";
 
-import { cards, scrollRight } from "../../utils";
+import { cards } from "../../utils";
 // import DotContainer from './DotContainer';
 
 class CarouselHandmade extends Component {
