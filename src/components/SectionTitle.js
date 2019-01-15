@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import { getBreakpoint } from "../utils";
-
+import styled from 'styled-components';
+import { getBreakpoint } from '../utils';
 
 const Sectiontitle = styled.p`
-  margin: ${props=> props.margins};
+  margin: ${props => props.margins};
 
   font-family: ${props => props.theme.font.family.titles};
-  font-size:  ${props => props.theme.font.size.sectionMobile};
+  font-size: ${props => props.theme.font.size.sectionTitleDesktop};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.sectionColor};
   border: 2px solid pink;
@@ -23,16 +22,18 @@ const Sectiontitle = styled.p`
     background: ${props => props.sectionColor};
   }
 
-  @media screen and (max-width: ${getBreakpoint('desktop')} ) and (min-width: ${getBreakpoint('tablet')})  {
-    font-size: ${props => props.theme.font.size.sectionTitleDesktop};  
+  @media screen and (max-width: ${getBreakpoint(
+      'desktop'
+    )}) and (min-width: ${getBreakpoint('tablet')}) {
+    font-size: ${props => props.theme.font.size.sectionTitleDesktop};
   }
-  @media screen and (max-width: ${getBreakpoint('tablet')})  and (min-width: ${getBreakpoint('mobile')}) {
+  @media screen and (max-width: ${getBreakpoint(
+      'tablet'
+    )}) and (min-width: ${getBreakpoint('mobile')}) {
     font-size: ${props => props.theme.font.size.sectionTitleTablet};
-    
   }
   @media screen and (max-width: ${getBreakpoint('mobile')}) {
     font-size: ${props => props.theme.font.size.sectionTitleMobile};
-    
   }
 `;
 

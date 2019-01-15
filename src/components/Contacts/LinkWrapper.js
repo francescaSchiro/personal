@@ -1,25 +1,56 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 import { checkIfAppleDevice } from '../../utils';
 
 const LinkWrapper = styled.div`
-  margin-top: 20px;
+position:relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: ${props => props.theme.color.lightBlue};
+  margin-left: ${props => props.mail ? '120px' : 0};
 
-  ${props => props.mail
-  ? css`
-      &::before {
-      content:'Don\'t be shy';
-      height: 100%;
-      width: 100%; 
-      }`
-    : ''
+  /* before Don't be shy element */
+  ${props =>
+    props.mail
+      ? css`
+          &::before {
+            content: "Don't be shy";
+            position:absolute;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items:center;
+            padding: 5px 5px;
+            /* bottom:40px;*/
+            left:-100px; 
+            /* text-transform:uppercase; */
+            color: ${props=> props.theme.color.backgroundColor}
+            background-color: ${props => props.theme.color.blue};
+            font-family: ${props=> props.theme.font.family.titles};
+            font-size: ${props=> props.theme.font.size.m};
+            letter-spacing: .1em;
+            border: 2px solid red;
+            border-radius: 5px;
+            height: 50px;
+            width:120px;
+          }
+          &:hover::before {
+            transition:all 1s ease-in-out;
+              /* transform: skew(-20deg) translateX(-20px); */
+              transform: translateX(-20px);
+            }
+        `
+      : ''}
+
+/* icon style */
+  & > i {
+    font-size: 40px;
   }
 
+/* hover effect NOT on Apple Devices */
   ${checkIfAppleDevice
-    ? ""
+    ? ''
     : css`
         &:hover > * {
           color: ${props => props.theme.color.blue};

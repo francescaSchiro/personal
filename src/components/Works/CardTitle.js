@@ -17,7 +17,7 @@ const CardTitle = styled.div`
   font-size: ${props => props.theme.font.size.xxl};
   color: white;
   padding: 5%;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   text-shadow: 2px 2px 8px black;
 
   /* see if it works on ipad */

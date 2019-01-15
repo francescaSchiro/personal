@@ -312,14 +312,11 @@ a:focus {
 
    /* font awesome icons */
 
-   .fa-github-square, .fa-behance-square, .fa-linkedin  {
+   /* .fa-github-square, .fa-behance-square, .fa-linkedin, .fa-envelope-square  {
     color: #90CCF4;
     font-size: 40px;
-  }
+  } */
 
-  .fa-github-square:hover, .fa-behance-square:hover, .fa-linkedin:hover {
-    color:#5DA2D5;
-  }
 
 /* ------------ GENERAL --------------- 
 

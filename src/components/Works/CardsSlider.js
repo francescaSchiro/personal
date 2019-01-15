@@ -8,6 +8,7 @@ const CardsSlider = styled.ul`
   
   display: block;
   white-space: nowrap;
+  height: 30vw;
   
 
   /* ------------SCROLL UI ----------*/
@@ -34,9 +35,7 @@ const CardsSlider = styled.ul`
     background: rgb(229, 121, 121);
   }
 
-  @media screen and (max-width: ${getBreakpoint(
-      "desktop"
-    )}) and (min-width: ${getBreakpoint("tablet")}) {
+  @media screen and (min-width: ${getBreakpoint("tablet")}) {
     /* 5 vw more than card height to detatch scrollbar */
     height: 30vw;
 

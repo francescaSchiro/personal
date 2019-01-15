@@ -7,6 +7,7 @@ const LinkContacts = styled.a`
   font-size: ${props => props.theme.font.size.xxl};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.sectionColor};
+  
 
   ::-moz-selection {
     /* Code for Firefox */

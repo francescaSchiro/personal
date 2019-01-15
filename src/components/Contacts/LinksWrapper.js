@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
   width: 100%;
@@ -7,16 +7,14 @@ const LinksWrapper = styled.div`
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  margin:  0 0 30px 0;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-
   }
 `;
 

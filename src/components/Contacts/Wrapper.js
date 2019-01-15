@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  min-height: 100%;
+  /* min-height: 100%; */
   width: 100%;
   border: 2px solid blueviolet;
 
@@ -9,6 +9,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+
 `;
 
 export default Wrapper;

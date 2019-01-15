@@ -1,13 +1,15 @@
-import styled from "styled-components";
-import { getBreakpoint } from "../../utils";
+import styled from 'styled-components';
+import { getBreakpoint } from '../../utils';
 
-import Overlay from "./Overlay";
-import CardTitle from "./CardTitle";
-import SeeMore from "./SeeMore";
+import Overlay from './Overlay';
+import CardTitle from './CardTitle';
+import SeeMore from './SeeMore';
 import CSub from './CSub';
 
 const CardWrapper = styled.li`
   position: relative;
+  width: 25vw;
+  height: 25vw;
 
   background-image: url(${props => props.coverUrl});
   background-position: center;
@@ -49,9 +51,7 @@ const CardWrapper = styled.li`
     z-index: 2;
   }
 
-  @media screen and (max-width: ${getBreakpoint(
-      "desktop"
-    )}) and (min-width: ${getBreakpoint("tablet")}) {
+  @media screen and (min-width: ${getBreakpoint('tablet')}) {
     /* width: 30vw;
       height: 30vw;
       margin: 1vw ; */
@@ -67,7 +67,7 @@ const CardWrapper = styled.li`
     /* scroll-snap-align: start; */
   }
   @media screen and (max-width: ${getBreakpoint(
-      "tablet"
+      'tablet'
     )}) and (min-width: 600px) {
     width: 40vw;
     height: 40vw;
