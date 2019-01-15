@@ -27,15 +27,11 @@ const About = () => (
 
         <PContainer>
           <P sectionColor={props => props.theme.color.yellow}>
-            Ciao. My Name is Francesca, I'm a graphic designer & front end
-            developer based in the town of Bergamo. I love discovering
-            new things. I believe that “the less you do, the less you’d do” and
-            this is why I am always active, pushed by a constant curiosity. My
-            experience and education enriched my graphic knowledge, for web and
-            print, and increased my awareness of it as a powerful mean of
-            communication, essential within a very competitive digital reality.
-            After a Master in coding I embraced a career in Front End
-            Development.
+            Ciao. 
+            My Name is Francesca, I'm a graphic designer & front end developer based in the town of Bergamo. 
+            I love discovering new things. I believe that “the less you do, the less you’d do” and this is why I am always active, pushed by a constant curiosity. 
+            My experience and education enriched my graphic knowledge, for web and print, and increased my awareness of it as a powerful mean of communication, essential within a very competitive digital reality.
+            After a Master in coding I embraced a career in Front End Development.
           </P>
         </PContainer>
 
@@ -68,15 +64,11 @@ const About = () => (
         <Fade right>
           <PContainer>
             <P sectionColor={props => props.theme.color.yellow}>
-              Ciao. My Name is Francesca, I'm a graphic designer & front end
-              developer based in the beautiful town of Bergamo. I love
-              discovering new things. I believe that “the less you do, the less
-              you’d do” and this is why I am always active, pushed by a constant
-              curiosity. My experience and education enriched my graphic
-              knowledge, for web and print, and increased my awareness of it as
-              a powerful mean of communication, essential within a very
-              competitive digital reality. After a Master in coding I embraced a
-              career in Front End Development.
+            Ciao. 
+            My Name is Francesca, I'm a graphic designer & front end developer based in the town of Bergamo. 
+            I love discovering new things. I believe that “the less you do, the less you’d do” and this is why I am always active, pushed by a constant curiosity. 
+            My experience and education enriched my graphic knowledge, for web and print, and increased my awareness of it as a powerful mean of communication, essential within a very competitive digital reality.
+            After a Master in coding I embraced a career in Front End Development.
             </P>
           </PContainer>
         </Fade>
