@@ -22,7 +22,7 @@ position:relative;
             justify-content: center;
             align-items:center;
             padding: 5px 5px;
-            bottom: ${ isIE ? '5px;' : '0' };
+            bottom: ${ isIE ? '5px;' : '' };
             left:-100px; 
             /* text-transform:uppercase; */
             color: ${props=> props.theme.color.backgroundColor}
