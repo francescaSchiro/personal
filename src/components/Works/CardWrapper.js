@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { getBreakpoint } from '../../utils';
+import styled, {css} from 'styled-components';
+import { getBreakpoint, isIE } from '../../utils';
 
 import Overlay from './Overlay';
 import CardTitle from './CardTitle';
@@ -17,39 +17,6 @@ const CardWrapper = styled.li`
   background-size: cover;
 
   z-index: 0;
-
-  &:hover ${Overlay} {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    z-index: 1;
-  }
-
-  &:hover ${CardTitle} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    z-index: 2;
-  }
-
-  &:hover ${SeeMore} {
-    display: block;
-    cursor: pointer;
-
-    z-index: 2;
-  }
-
-  &:hover ${CSub} {
-    display: block;
-    cursor: pointer;
-
-    z-index: 2;
-  }
 
   @media screen and (min-width: ${getBreakpoint('tablet')}) {
     /* width: 30vw;
@@ -90,6 +57,43 @@ const CardWrapper = styled.li`
     margin-right: 2vw;
     /* scroll-snap-align: start; */
   }
+  ${ isIE ? '' : css`
+  
+  &:hover ${Overlay} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+  }
+
+  &:hover ${CardTitle} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    z-index: 2;
+  }
+
+  &:hover ${SeeMore} {
+    display: block;
+    cursor: pointer;
+
+    z-index: 2;
+  }
+
+  &:hover ${CSub} {
+    display: block;
+    cursor: pointer;
+
+    z-index: 2;
+  }
+
+  `}
+ 
 `;
 
 export default CardWrapper;

@@ -20,7 +20,7 @@ class CarouselHandmade extends Component {
         <CardsSlider id={"slider"}>
           {cards.map(el => (
             <CardWrapper key={el.id} coverUrl={el.coverUrl}>
-              <CardTitle>{el.title}</CardTitle>
+              <CardTitle href={el.more} target="_blank">{el.title}</CardTitle>
               <Overlay />
               
               <CSub>{el.description}</CSub>

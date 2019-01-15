@@ -40,21 +40,21 @@ const Brick = styled.div`
   animation-delay: 1s;
 
   /* commons */
-  height: 50px;
+  height: 56px;
   width: 100px;
   background-color: transparent;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 
   /* border-radius: 2px; */
-
   &:after {
     content: "";
     display: inline-block;
     position: absolute;
+    top:0; /*fixed iE*/
     right: -300px;
     height: 56px;
     width: 300px;
@@ -65,6 +65,7 @@ const Brick = styled.div`
   &:before {
     content: "";
     position: absolute;
+    top:0; /*fixed iE*/
     left: -300px;
     height: 56px;
     width: 300px;

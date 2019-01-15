@@ -22,7 +22,7 @@ position:relative;
             justify-content: center;
             align-items:center;
             padding: 5px 5px;
-            /* bottom:40px;*/
+            bottom: ${ isIE ? '5px;' : '0' };
             left:-100px; 
             /* text-transform:uppercase; */
             color: ${props=> props.theme.color.backgroundColor}
@@ -48,7 +48,7 @@ position:relative;
   }
 
 /* hover effect NOT on Apple Devices */
-  ${(checkIfAppleDevice || isIE)
+  ${(checkIfAppleDevice)
     ? ''
     : css`
         &:hover > * {

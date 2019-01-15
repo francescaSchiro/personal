@@ -4,6 +4,9 @@ const DotWrapper = styled.button`
   width: 100px;
   height: 70px;
   padding: 100px 70px;
+  background-color: transparent;
+  border: none;
+
 
   cursor: pointer;
   all: unset;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const CardTitle = styled.div`
+text-decoration: none;
   position: absolute;
   width: 75%;
   /* margin: 0 auto; */
