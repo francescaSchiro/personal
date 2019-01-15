@@ -6,7 +6,7 @@ const BodyWrapper = styled.div`
   width: 100%;
   padding:  0 5vw;
   
-  border: 2px solid lightblue;
+  /* border: 2px solid lightblue; */
   white-space: pre-wrap;
 
   display: flex;

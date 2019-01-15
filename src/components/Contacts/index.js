@@ -41,7 +41,7 @@ const Contacts = () => (
         <LinksWrapper>
           <H3 contacts>You can find me on:</H3>
           <LinkWrapper id= {'LinkWrapper'}>
-            <i className='fab fa-github-square' style={{border:'2px solid blue'}}/>
+            <i className='fab fa-github-square'/>
             <LinkContacts
               href='https://github.com/francescaSchiro'
               target='_blank'
@@ -50,7 +50,7 @@ const Contacts = () => (
             > Git Hub </LinkContacts>
           </LinkWrapper>
           <LinkWrapper>
-            <i className='fab fa-behance-square' style={{border:'2px solid blue'}}/>
+            <i className='fab fa-behance-square' />
             <LinkContacts
               href='https://www.behance.net/francescaschiro'
               target='_blank'
@@ -59,7 +59,7 @@ const Contacts = () => (
             >Behance</LinkContacts>
           </LinkWrapper>
           <LinkWrapper>
-            <i className='fab fa-linkedin' style={{border:'2px solid blue'}}/>
+            <i className='fab fa-linkedin' />
             <LinkContacts
               href='www.linkedin.com/in/francesca-schiro'
               target='_blank'
@@ -71,7 +71,7 @@ const Contacts = () => (
         <LinksWrapper>
           <H3 contacts>Or contact me even just to say hi!</H3>
           <LinkWrapper mail id= {'mail'}>
-            <i className='fas fa-envelope-square' style={{border:'2px solid blue'}}/>
+            <i className='fas fa-envelope-square' />
             <LinkContacts
               mailto= 'francesca_schiro@yahoo.it'
               href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing"'

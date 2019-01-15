@@ -4,7 +4,7 @@ import { getBreakpoint } from "../../utils";
 const CardsSlider = styled.ul`
   position: relative;
   width: 100vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   
   display: block;
   white-space: nowrap;

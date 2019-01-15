@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Footer = styled.div`
   width: 100%;
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
 
   display: flex;
   flex-direction: row;

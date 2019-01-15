@@ -8,7 +8,7 @@ const Sectiontitle = styled.p`
   font-size: ${props => props.theme.font.size.sectionTitleDesktop};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.sectionColor};
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   /* position: absolute; */
 
   ::-moz-selection {

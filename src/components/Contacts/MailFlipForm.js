@@ -5,10 +5,7 @@ import styled from "styled-components";
 const MailFlipForm = styled.div`
   margin-top: 20px;
   width: 100%;
-
-  /* scroll-snap-align: start; */
-  
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   white-space: pre-wrap;
 
   display: flex;

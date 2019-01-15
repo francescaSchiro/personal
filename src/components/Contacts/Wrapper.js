@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   /* min-height: 100%; */
   width: 100%;
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
 
   display: flex;
   flex-direction: column;

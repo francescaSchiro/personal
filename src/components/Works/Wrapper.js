@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   /* height:100%; */
   /* min-height: 100%; */
   width: 100%;
-  border: 2px solid red;
-  /* scroll-snap-align: start; */
+  /* border: 2px solid red; */
+
   /* height: 100vh; */
   display: flex;
   flex-direction: column;

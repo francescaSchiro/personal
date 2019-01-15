@@ -6,7 +6,7 @@ const P = styled.div`
   font-size: ${props => props.theme.font.size.xl};
   color: ${props => props.theme.color.fontColor};
   line-height: 1.3em;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin: 40px 40px 0 0;
 
   

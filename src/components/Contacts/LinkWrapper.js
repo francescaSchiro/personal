@@ -30,15 +30,14 @@ position:relative;
             font-family: ${props=> props.theme.font.family.titles};
             font-size: ${props=> props.theme.font.size.m};
             letter-spacing: .1em;
-            border: 2px solid red;
-            border-radius: 5px;
+            /* border: 2px solid red; */
+            border-radius: 3px;
             height: 50px;
             width:120px;
           }
           &:hover::before {
-            transition:all 1s ease-in-out;
-              /* transform: skew(-20deg) translateX(-20px); */
-              transform: translateX(-20px);
+            transition:all .7s ease-in-out;
+              transform: translateX(-15px);
             }
         `
       : ''}

@@ -5,9 +5,7 @@ import styled from "styled-components";
 
 const PContainer = styled.div`
   width: 100%;
-  border: 2px solid var(--yellow);
-  /* scroll-snap-align: start; */
-  border: 2px solid lightblue;
+  /* border: 2px solid lightblue; */
 
   display: flex;
   flex-direction: row;

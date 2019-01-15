@@ -5,8 +5,7 @@ import styled from "styled-components";
 
 const SectionTitleContainer = styled.div`
   width: 100%;
-  border: 2px solid var(--yellow);
-  /* scroll-snap-align: start; */
+  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

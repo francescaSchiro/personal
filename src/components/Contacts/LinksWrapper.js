@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const LinksWrapper = styled.div`
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   white-space: pre-wrap;
 
   display: flex;

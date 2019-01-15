@@ -5,8 +5,7 @@ const DotContainer = styled.div`
   
   position:fixed;
   width: 100vw;
-  border: 2px solid red;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 
 
   transition: all 0.2s ease-in-out;
