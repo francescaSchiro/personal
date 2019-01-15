@@ -19,7 +19,7 @@ const Contacts = () => (
     <SectionTitleContainer className='contactsSection' id='contacts'>
       {checkIfAppleDevice ? (
         <SectionTitle
-          margins={'90px -10px 0 0'}
+          margins={'80px -10px 0 0'}
           sectionColor={props => props.theme.color.lightBlue}
         >
           Contacts
@@ -27,7 +27,7 @@ const Contacts = () => (
       ) : (
         <Fade left>
           <SectionTitle
-            margins={'90px -10px 0 0'}
+            margins={'80px -10px 0 0'}
             sectionColor={props => props.theme.color.lightBlue}
           >
             Contacts
@@ -150,10 +150,9 @@ const Contacts = () => (
         </BodyWrapper>
       </Fade>
     )}
-
     <Footer>
-      Francesca Schiro | Front End & Graphic Designer | Tutti i diritti
-      riservati © 2019
+      Francesca Schiro | Front End & Graphic Designer | All rights reserved ©
+      2019
     </Footer>
   </Wrapper>
 );

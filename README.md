@@ -246,3 +246,4 @@ DOESNT WORK : `yarn remove aos`
 - [ ] -- **NOPE** -- Contacts Form implementation (_cant host on ghpages servers_)
 - [ ] CardModal (?iframe?)
 - [ ] Do aboutmetxt
+- [ ] 404 page ?

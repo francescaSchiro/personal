@@ -3,6 +3,7 @@ import { getBreakpoint } from '../utils';
 
 const Sectiontitle = styled.p`
   margin: ${props => props.margins};
+  z-index: 10;
 
   font-family: ${props => props.theme.font.family.titles};
   font-size: ${props => props.theme.font.size.sectionTitleDesktop};

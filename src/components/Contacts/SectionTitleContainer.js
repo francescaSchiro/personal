@@ -5,13 +5,14 @@ import styled from "styled-components";
 
 const SectionTitleContainer = styled.div`
   width: 100%;
+  /* height:100%; */
   /* border: 2px solid yellow; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-bottom: 40px;
-
+  /* margin-bottom: 40px; */
+  z-index: 10;
   /* position: relative; */
   overflow: hidden;
 `;

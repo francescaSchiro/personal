@@ -4,8 +4,8 @@ import styled from "styled-components";
 /* ${props => getBgGradient(props.theme.color.yellow, props.theme.color.red)}; */
 
 const Wrapper = styled.div`
-min-height: 100%;
-  height: 100vh;
+/* min-height: 100%;
+  height: 100vh; */
   width: 100%;
   /* border: 2px solid yellow; */
   /* height: 100vh; */
