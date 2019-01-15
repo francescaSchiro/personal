@@ -11,7 +11,7 @@ const CardTitle = styled.div`
   text-align: center;
   letter-spacing: 0.05em;
 
-  /* border: 3px solid ${props => props.theme.color.red}; */
+  border: 3px solid ${props => props.theme.color.red};
 
   font-family: ${props => props.theme.font.family.titles};
   font-size: ${props => props.theme.font.size.xxl};

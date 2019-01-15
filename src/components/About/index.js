@@ -28,7 +28,7 @@ const About = () => (
         <PContainer>
           <P sectionColor={props => props.theme.color.yellow}>
             Ciao. My Name is Francesca, I'm a graphic designer & front end
-            developer based in the beautiful town of Bergamo. I love discovering
+            developer based in the town of Bergamo. I love discovering
             new things. I believe that “the less you do, the less you’d do” and
             this is why I am always active, pushed by a constant curiosity. My
             experience and education enriched my graphic knowledge, for web and
