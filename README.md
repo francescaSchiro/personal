@@ -240,7 +240,8 @@ DOESNT WORK : `yarn remove aos`
 
 - [x] CardTitle always visible.
 - [x] NavItem hover effect disabled on AppleDevices.
-- [ ] Contacts Wrapper
-- [ ] Contacts mailto form
-- [ ] Contacts Form implementation
+- [ ] ? Dot before hor scroll
+- [x] Contacts Wrapper
+- [ ] Contacts mailto form . Or e-mail me even just to say hi! Don't be shy. (before div translate up on hover)
+- [ ] -- **NOPE** -- Contacts Form implementation (_cant host on ghpages servers_)
 - [ ] CardModal
