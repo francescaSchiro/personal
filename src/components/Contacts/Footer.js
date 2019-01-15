@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const Footer = styled.div`
   width: 100%;
   /* border: 2px solid blueviolet; */
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   display: flex;
   flex-direction: row;
   justify-content: center;
