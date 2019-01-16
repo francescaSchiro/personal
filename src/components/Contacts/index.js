@@ -65,7 +65,7 @@ const Contacts = () => (
           <LinkWrapper>
             <i className='fab fa-linkedin' />
             <LinkContacts
-              href='https://www.linkedin.com/in/francesca-schiro'
+              href='https://www.linkedin.com/in/francesca-schiro/'
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
@@ -74,6 +74,7 @@ const Contacts = () => (
             </LinkContacts>
           </LinkWrapper>
         </LinksWrapper>
+
         <LinksWrapper>
           <H3 contacts>Or contact me even just to say hi!</H3>
           <LinkWrapper mail id={'mail'} href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing'>
