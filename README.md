@@ -50,40 +50,49 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Handmade carousel: FIX mediaqueries. mosaic in tablet and desktop. full screen scroll in devices.---changed: scroll in all devices. 100vw width only in mobile view though.
 - [x] implement scrollbar horiz to navigate in desktop without touch.(couldnt make Dot button working with scrollLeft **TODO**)
 - [x] make Dot for navigating CarouselHandmade component
+- [x] make about section
+- [ ] hide menu on scroll down and show on scroll up
+- [ ] make placeholders for no connection: (icons and system font alternatives) added alt to button icons?
 - [ ] implement function in utils at onclick arrow for horizontal carousel scrollLeft https://www.w3schools.com/jsref/prop_element_scrollleft.asp
 - [ ] make description scroll at bottom;
 - [ ] ? make images smaller on desktop;
 - [ ] make square covers
 - [ ] horizontal scrolling dot like in home?
 - [ ] ADD titles font ternary. TODO make Csub and CTitle H1 and H3 or P.
-- [ ] why deletes theme icon when i delete index.css? replace with global style
-- [ ] make about section
-- [ ] ADD carousel TODO finish to implement. see CBody
-- [ ] implement Work Carousel with React-reveal library https://www.react-reveal.com/tutorials/carousel/
-- [ ] make 1 sectionTitleContainer
-- [ ] SEE CV on target blank link
+- [ ] ??? why deletes theme icon when i delete index.css? replace with global style
+- [x] implement Work Carousel with React-reveal library DONE but not used - made custome one https://www.react-reveal.com/tutorials/carousel/
+- [x] make 1 sectionTitleContainer
+- [x] SEE CV on target blank link
 - [ ] picking eyes on hover see CV. after upload image svg or png(before after icons) transparent div going up with change opacity:1
-- [ ] make about section text
-- [ ] make work section w/ behance link
-- [ ] make contact section
+- [x] make and update favicon.ico
+- [x] make work section w/ behance link
+- [x] make contact section
 - [ ] animate on scroll with https://github.com/michalsnik/aos/tree/v2
 - [ ] make paragraph appear at when scrolled in view. look at pure js in davide's sfiddle
-- [ ] make placeholders for no connection: (icons and system font alternatives) added alt to button icons?
 - [ ] ? Animated Hamburger menu -> X for nav on responsive view.
-- [ ] hide menu on scroll down and show on scroll up
 - [ ] ?? make symbols in nav https://altcodeunicode.com/alt-codes-geometric-shape-symbols/
 - [ ] make symbols with css https://css-tricks.com/the-shapes-of-css/
 - [ ] install react-router
 - [ ] make selection mixin in utils getSelectionColors(bg,fg)
-- [ ] set up routes
-- [ ] 404 page
-- [ ] install Material UI ?
-- [ ] redux?
-- [ ] [Normalize.css](http://necolas.github.io/normalize.css/)
-- [ ] Prettier ?
-- [ ] make and update favicon.ico
-- [ ] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
-- [ ] change color nav tab when scrolling
+- [ ] ?? set up routes
+- [ ] ?? install Material UI ?
+- [ ] ?? [Normalize.css](http://necolas.github.io/normalize.css/)
+- [ ] ?? Prettier ?
+- [x] fix eslint following this docs: https://www.robinwieruch.de/react-eslint-webpack-babel/
+- [x] change color nav tab when scrolling - REMOVED gradient
+
+## FIX:
+
+- [x] CardTitle always visible.
+- [x] NavItem hover effect disabled on AppleDevices.
+- [x] Contacts Wrapper
+- [x] Contacts mailto form . Or e-mail me even just to say hi! Don't be shy. (before div translate up on hover)
+- [ ] Do aboutmetxt
+- [ ] FIX onMouseOut on Don't be shy so it doesnt jump.
+- [ ] Dot hor scroll in FireFox
+- [ ] -- **NOPE** -- Contacts Form implementation (_cant host on ghpages servers_)
+- [ ] CardModal (?iframe?)
+- [ ] ? 404 page ?
 
 ---
 
@@ -235,15 +244,3 @@ DOESNT WORK : `yarn remove aos`
     });
     </script>
 ```
-
-## FIX:
-
-- [x] CardTitle always visible.
-- [x] NavItem hover effect disabled on AppleDevices.
-- [ ] ? Dot before hor scroll
-- [x] Contacts Wrapper
-- [x] Contacts mailto form . Or e-mail me even just to say hi! Don't be shy. (before div translate up on hover)
-- [ ] -- **NOPE** -- Contacts Form implementation (_cant host on ghpages servers_)
-- [ ] CardModal (?iframe?)
-- [ ] Do aboutmetxt
-- [ ] 404 page ?
