@@ -65,7 +65,7 @@ const Contacts = () => (
           <LinkWrapper>
             <i className='fab fa-linkedin' />
             <LinkContacts
-              href='www.linkedin.com/in/francesca-schiro'
+              href='https://www.linkedin.com/in/francesca-schiro'
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
