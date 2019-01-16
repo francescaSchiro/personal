@@ -99,7 +99,7 @@ summary {
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
@@ -120,6 +120,7 @@ summary {
    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 html {
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 *,
@@ -153,7 +154,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -196,13 +197,13 @@ pre {
   word-wrap: break-word; /* IE */
 }
 
-input[type="radio"] {
+input[type='radio'] {
   vertical-align: text-bottom;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   vertical-align: bottom;
 }
-.ie7 input[type="checkbox"] {
+.ie7 input[type='checkbox'] {
   vertical-align: baseline;
 }
 .ie6 input {
@@ -258,9 +259,9 @@ samp {
 /* hand cursor on clickable elements */
 .clickable,
 label,
-input[type="button"],
-input[type="submit"],
-input[type="file"],
+input[type='button'],
+input[type='submit'],
+input[type='file'],
 button {
   cursor: pointer;
 }
@@ -275,7 +276,7 @@ textarea {
 
 /* make buttons play nice in IE */
 button,
-input[type="button"] {
+input[type='button'] {
   width: auto;
   overflow: visible;
 }
@@ -288,7 +289,7 @@ input[type="button"] {
 /* let's clear some floats */
 .clearfix:before,
 .clearfix:after {
-  content: "\0020";
+  content: '\0020';
   display: block;
   height: 0;
   overflow: hidden;
@@ -302,7 +303,7 @@ input[type="button"] {
 
 /* from create react app */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -310,12 +311,6 @@ a:focus {
   text-decoration: none;
 }
 
-   /* font awesome icons */
-
-   /* .fa-github-square, .fa-behance-square, .fa-linkedin, .fa-envelope-square  {
-    color: #90CCF4;
-    font-size: 40px;
-  } */
 
 
 /* ------------ GENERAL --------------- 

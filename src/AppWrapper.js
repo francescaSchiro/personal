@@ -14,15 +14,21 @@ const AppWrapper = styled.div`
   /*hide scrollbar*/
 
   -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+  -moz-scrollbars-none: none;
 
+  ::-moz-scrollbar {
+    display: none; 
+}
   ::-webkit-scrollbar {
     display: none;
   }
 
   /* for smooth scrolling like in iOS */
   overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+
+
 `;
 
 export default AppWrapper;
