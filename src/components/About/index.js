@@ -42,7 +42,7 @@ const About = () => (
           <Link
             about
             sectionColor={props => props.theme.color.yellow}
-            href="https://docdro.id/U6bDALF"
+            href="https://www.docdroid.net/e9iLeoj/francesca-schiro-cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -85,7 +85,7 @@ const About = () => (
             <Link
               about
               sectionColor={props => props.theme.color.yellow}
-              href="https://docdro.id/U6bDALF"
+              href="https://www.docdroid.net/e9iLeoj/francesca-schiro-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
