@@ -15,8 +15,9 @@ const Wrapper = styled.div`
   align-items: center;
 
   overflow: hidden;
+
   @media screen and (min-width: ${getBreakpoint("tablet")}) {
-    height: 100vh; 
+    min-height: 100vh; 
     
   }
 `;

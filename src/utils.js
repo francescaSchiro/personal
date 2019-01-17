@@ -172,6 +172,9 @@ export const getBreakpoint = device => {
     case 'desktop': {
       return '1800px';
     }
+    case 'desktopMinH': {
+      return '700px';
+    }
     default: {
       return console.log('not given breakpoint device');
     }

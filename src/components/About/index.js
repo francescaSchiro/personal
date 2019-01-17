@@ -26,21 +26,16 @@ const About = () => (
         </SectionTitleContainer>
 
         <PContainer>
-          <P sectionColor={props => props.theme.color.yellow}>
-            Ciao. <br />
-            I am Francesca. <br />
-            I think pufferfish are pretty cool. <br />
-            Discovering new places and meeting new people <br />
-            makes me feel alive. <br />
-            I like sports and getting my outdoor fix once in a while. <br />
-            I give 100% in everything I do. <br />
-            Knowing that there's always something to learn makes me happy.{" "}
-            <br />
-          </P>
-          <span style={{ fontWeight: "bold" }}>
-            ... And I'm a Graphic Designer & Front End Developer living in
-            Bergamo.{" "}
-          </span>
+        <P sectionColor={props => props.theme.color.yellow}>
+              Ciao. <br />
+              I am Francesca, a Graphic Designer & Front End Developer living in
+              Bergamo. <br />
+              I think pufferfish are pretty cool. <br />
+              Discovering new places and meeting new people makes me feel alive. <br />
+              I like sports and getting my outdoor fix once in a while. <br />
+              I give 100% in everything I do. <br />
+              Knowing that there's always something to learn makes me happy. <br />
+            </P>
         </PContainer>
 
         <LinkContainer>

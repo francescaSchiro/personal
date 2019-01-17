@@ -1,7 +1,6 @@
 import styled from "styled-components";
+import { getBreakpoint } from '../../utils';
 
-// import { getBgGradient } from '../../utils';
-/* ${props => getBgGradient(props.theme.color.red, props.theme.color.blue)}; */
 
 const Wrapper = styled.div`
   /* height:100%; */
@@ -15,6 +14,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media screen and (min-width: ${getBreakpoint("tablet")}) {
+    min-height: 100vh; 
+  }
 
 `;
 
