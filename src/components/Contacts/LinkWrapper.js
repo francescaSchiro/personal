@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { checkIfAppleDevice, isIE } from '../../utils';
+import {  isIE } from '../../utils';
 
 const LinkWrapper = styled.div`
 position:relative;
@@ -46,15 +46,19 @@ position:relative;
   & > i {
     font-size: 40px;
   }
+  
+  &:hover > * {
+          color: ${props => props.theme.color.blue};
+        }
+  `;
 
-/* hover effect NOT on Apple Devices */
+export default LinkWrapper;
+
+/* hover effect NOT on Apple Devices
   ${(checkIfAppleDevice)
     ? ''
     : css`
         &:hover > * {
           color: ${props => props.theme.color.blue};
         }
-      `}
-`;
-
-export default LinkWrapper;
+      `} */

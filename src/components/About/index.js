@@ -40,6 +40,7 @@ const About = () => (
 
         <LinkContainer>
           <Link
+          about
             sectionColor={props => props.theme.color.yellow}
             href="https://docdro.id/U6bDALF"
             target="_blank"

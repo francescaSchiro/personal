@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
 
 const Link = styled.a`
   padding: 20px;
@@ -7,7 +7,7 @@ const Link = styled.a`
   font-size: ${props => props.theme.font.size.xxl};
   font-weight: ${props => props.theme.font.weight.bold};
   color: ${props => props.sectionColor};
-  
+
   /* for IE11 and IE10 */
   touch-action: manipulation;
   -ms-touch-action: manipulation;
@@ -22,9 +22,16 @@ const Link = styled.a`
     color: ${props => props.theme.color.backgroundColor};
     background: ${props => props.sectionColor};
   }
+
+  ${props =>
+    props.about
+      ? css`
+          &:hover {
+            color: ${props => props.theme.color.darkYellow};
+          }
+        `
+      : ''}
 `;
 
 export default Link;
 
-//LINK to just open: https://docdro.id/U6bDALF"
-// to DOWNLOAD : https://github.com/francescaSchiro/MyFiles/blob/master/CV.pdf?raw=true
