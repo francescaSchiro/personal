@@ -34,9 +34,9 @@ position:relative;
             border-radius: 3px;
             height: 50px;
             width:120px;
+            transition:all .7s ease-in-out;
           }
           &:hover::before {
-            transition:all .7s ease-in-out;
               transform: translateX(-15px);
             }
         `
