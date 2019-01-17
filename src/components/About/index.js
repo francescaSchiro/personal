@@ -26,21 +26,21 @@ const About = () => (
         </SectionTitleContainer>
 
         <PContainer>
-        <P sectionColor={props => props.theme.color.yellow}>
-              Ciao. <br />
-              I am Francesca, a Graphic Designer & Front End Developer living in
-              Bergamo. <br />
-              I think pufferfish are pretty cool. <br />
-              Discovering new places and meeting new people makes me feel alive. <br />
-              I like sports and getting my outdoor fix once in a while. <br />
-              I give 100% in everything I do. <br />
-              Knowing that there's always something to learn makes me happy. <br />
-            </P>
+          <P sectionColor={props => props.theme.color.yellow}>
+            Ciao. <br />
+            I am Francesca, a Graphic Designer & Front End Developer living in
+            Bergamo. I strongly believe in the way 'Do what you love, love what
+            you do' and this is why I always give 100%. Knowing that there's
+            always something to learn makes me happy. I like sports and getting
+            my outdoor fix once in a while. I love cooking, drawing, photography
+            and discovering new places makes me feel alive. <br />
+            ...and I also think pufferfish are pretty awesome.
+          </P>
         </PContainer>
 
         <LinkContainer>
           <Link
-          about
+            about
             sectionColor={props => props.theme.color.yellow}
             href="https://docdro.id/U6bDALF"
             target="_blank"
@@ -70,18 +70,20 @@ const About = () => (
             <P sectionColor={props => props.theme.color.yellow}>
               Ciao. <br />
               I am Francesca, a Graphic Designer & Front End Developer living in
-              Bergamo. <br />
-              I think pufferfish are pretty cool. <br />
-              Discovering new places and meeting new people makes me feel alive. <br />
-              I like sports and getting my outdoor fix once in a while. <br />
-              I give 100% in everything I do. <br />
-              Knowing that there's always something to learn makes me happy. <br />
+              Bergamo. I strongly believe in the way 'Do what you love, love
+              what you do' and this is why I always give 100%. Knowing that
+              there's always something to learn makes me happy. I like sports
+              and getting my outdoor fix once in a while. I love cooking,
+              drawing, photography and discovering new places makes me feel
+              alive. <br />
+              ...and I also think pufferfish are pretty awesome.
             </P>
           </PContainer>
         </Fade>
         <LinkContainer>
           <Fade>
             <Link
+              about
               sectionColor={props => props.theme.color.yellow}
               href="https://docdro.id/U6bDALF"
               target="_blank"

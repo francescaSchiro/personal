@@ -5,5 +5,5 @@ export default {
   blue: "#5DA2D5",
   gray: "#ECECEC",
   darkGray: "#1A1A1A",
-  darkYellow: '#e2c44a'
+  darkYellow: '#ceb245'
 };
