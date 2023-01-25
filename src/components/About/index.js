@@ -42,7 +42,7 @@ const About = () => (
           <Link
           about
             sectionColor={props => props.theme.color.yellow}
-            href="https://docdro.id/U6bDALF"
+            href="https://www.behance.net/gallery/162174385/Francesca-Schiro-CV"
             target="_blank"
             rel="noopener noreferrer"
           >
