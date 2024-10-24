@@ -26,23 +26,23 @@ const About = () => (
         </SectionTitleContainer>
 
         <PContainer>
-        <P sectionColor={props => props.theme.color.yellow}>
-              Ciao. <br />
-              I am Francesca, a Graphic Designer & Front End Developer living in
-              Bergamo. <br />
-              I think pufferfish are pretty cool. <br />
-              Discovering new places and meeting new people makes me feel alive. <br />
-              I like sports and getting my outdoor fix once in a while. <br />
-              I give 100% in everything I do. <br />
-              Knowing that there's always something to learn makes me happy. <br />
-            </P>
+          <P sectionColor={props => props.theme.color.yellow}>
+            Ciao. <br />
+            I am Francesca, a Graphic Designer & Front End Developer living in
+            Bergamo. <br />
+            I think pufferfish are pretty cool. <br />
+            Discovering new places and meeting new people makes me feel alive. <br />
+            I like sports and getting my outdoor fix once in a while. <br />
+            I give 100% in everything I do. <br />
+            Knowing that there's always something to learn makes me happy. <br />
+          </P>
         </PContainer>
 
         <LinkContainer>
           <Link
-          about
+            about
             sectionColor={props => props.theme.color.yellow}
-            href="https://www.behance.net/gallery/162174385/Francesca-Schiro-CV"
+            href="https://www.canva.com/design/DAGULzf1da0/ThvlG2O1s8wJuZHxjUoQSw/view?utm_content=DAGULzf1da0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
             target="_blank"
             rel="noopener noreferrer"
           >
