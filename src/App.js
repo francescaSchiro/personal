@@ -62,9 +62,7 @@ class App extends Component {
                       (e => e.preventDefault(),
                       () => scrollToSection('.aboutSection'))
                     }
-                    // onClick={() => scrollToSection(".aboutSection")}
                     sectionColor={props => props.theme.color.yellow}
-                    // href="#about"
                   >
                     About /
                   </NavItem>
@@ -81,7 +79,6 @@ class App extends Component {
                 <Fade left>
                   <NavItem
                     type='button'
-                    // onClick={() => scrollToSection(".contactsSection")}
                     sectionColor={props => props.theme.color.lightBlue}
                     href='#contacts'
                   >

@@ -9,6 +9,10 @@ const P = styled.div`
   /* border: 2px solid blue; */
   margin: 40px 40px 0 0;
 
+  b {
+  font-weight: bold;
+  }
+
   
   white-space: pre-wrap;  /* not preserving new lines!!! */
   

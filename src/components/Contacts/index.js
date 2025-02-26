@@ -77,10 +77,10 @@ const Contacts = () => (
 
         <LinksWrapper>
           <H3 contacts>Or contact me even just to say hi!</H3>
-          <LinkWrapper mail id={'mail'} href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing'>
+          <LinkWrapper mail id={'mail'} href='mailto:francescaschiro.fs@gmail.com?subject=Just%20wanted%20to%20say...&body=That you are amazing'>
             <i className='fas fa-envelope-square' />
             <LinkContacts
-              href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing'
+              href='mailto:francescaschiro.fs@gmail.com?subject=Just%20wanted%20to%20say...&body=That you are amazing'
               // target='_blank'
               // rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
@@ -136,8 +136,8 @@ const Contacts = () => (
             <LinkWrapper mail id={'mail'}>
               <i className='fas fa-envelope-square' />
               <LinkContacts
-                mailto='francesca_schiro@yahoo.it'
-                href='mailto:francesca_schiro@yahoo.it?subject=Just%20wanted%20to%20say...&body=That you are amazing"'
+                mailto='francescaschiro.fs@gmail.com'
+                href='mailto:francescaschiro.fs@gmail.com?subject=Just%20wanted%20to%20say...&body=That you are amazing"'
                 // target='_blank'
                 // rel='noopener noreferrer'
                 sectionColor={props => props.theme.color.lightBlue}

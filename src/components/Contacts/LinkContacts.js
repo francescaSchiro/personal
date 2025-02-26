@@ -22,6 +22,3 @@ const LinkContacts = styled.a`
 `;
 
 export default LinkContacts;
-
-//LINK to just open: https://docdro.id/U6bDALF"
-// to DOWNLOAD : https://github.com/francescaSchiro/MyFiles/blob/master/CV.pdf?raw=true
