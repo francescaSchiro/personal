@@ -10,12 +10,19 @@ import Link from "../Link";
 import { checkIfAppleDevice, isIE } from "../../utils";
 
 // { checkIfAppleDevice && <div>asfkgfkwqfufgqiwu</div> }
+const ABOUT_TEXT = <>
+<b>Front-End Developer</b> with 6 years of expertise in building, maintaining, and testing responsive, scalable, and high-performance applications. <br />
+<b>React & Next.js</b> specialist, with strong proficiency in <b>TypeScript</b>, <b>JavaScript (ES6+)</b>, <b>HTML</b>, <b>CSS/SCSS</b>, and modern styling libraries. Skilled in component-driven development, design systems and accessibility. Experienced in unit and end-to-end testing with <b>Jest</b> and <b>Cypress</b> to maintain code reliability. <br />
+Adept at <b>remote work</b> and cross-functional collaboration with global teams, often bridging the gap between design and development while optimizing performance for the best user experience. 
+Passionate about <b>continuous learning</b>, exploring new technologies, and crafting intuitive, user-centered interfaces. <br />
+Outside of coding, I find inspiration in traveling, outdoor adventures and discovering new cultures.
+    </>;
 
 const About = () => (
   <Wrapper>
     {checkIfAppleDevice || isIE ? (
       // if apple device
-      <React.Fragment>
+      <>
         <SectionTitleContainer className="aboutSection" id="about">
           <SectionTitle
             margins={"90px 0 0 -20px"}
@@ -26,34 +33,27 @@ const About = () => (
         </SectionTitleContainer>
 
         <PContainer>
-          <P sectionColor={props => props.theme.color.yellow}>
-            Ciao. <br />
-            I am Francesca, a Graphic Designer & Front End Developer living in
-            Bergamo. <br />
-            I think pufferfish are pretty cool. <br />
-            Discovering new places and meeting new people makes me feel alive. <br />
-            I like sports and getting my outdoor fix once in a while. <br />
-            I give 100% in everything I do. <br />
-            Knowing that there's always something to learn makes me happy. <br />
-          </P>
+        <P sectionColor={props => props.theme.color.yellow}>
+        {ABOUT_TEXT}
+            </P>
         </PContainer>
 
         <LinkContainer>
           <Link
             about
             sectionColor={props => props.theme.color.yellow}
-            href="https://www.canva.com/design/DAGULzf1da0/ThvlG2O1s8wJuZHxjUoQSw/view?utm_content=DAGULzf1da0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            href="https://www.canva.com/design/DAGgOYcGXkE/l-khDVgp00C5fbhfan0J4w/view?utm_content=DAGgOYcGXkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb75128c8e"
             target="_blank"
             rel="noopener noreferrer"
           >
             Curious? Take a look at my CV
           </Link>
         </LinkContainer>
-      </React.Fragment>
+      </>
     ) : (
       // if NOT apple device: import Fade animations from reactreval
 
-      <React.Fragment>
+      <>
         <SectionTitleContainer className="aboutSection" id="about">
           <Fade left>
             <SectionTitle
@@ -68,14 +68,15 @@ const About = () => (
         <Fade right>
           <PContainer>
             <P sectionColor={props => props.theme.color.yellow}>
-              Ciao. <br />
+              {ABOUT_TEXT}
+              {/* Ciao. <br />
               I am Francesca, a Graphic Designer & Front End Developer living in
               Bergamo. <br />
               I think pufferfish are pretty cool. <br />
               Discovering new places and meeting new people makes me feel alive. <br />
               I like sports and getting my outdoor fix once in a while. <br />
               I give 100% in everything I do. <br />
-              Knowing that there's always something to learn makes me happy. <br />
+              Knowing that there's always something to learn makes me happy. <br /> */}
             </P>
           </PContainer>
         </Fade>
@@ -83,7 +84,7 @@ const About = () => (
           <Fade>
             <Link
               sectionColor={props => props.theme.color.yellow}
-              href="https://www.behance.net/gallery/162174385/Francesca-Schiro-CV"
+              href="https://www.canva.com/design/DAGgOYcGXkE/l-khDVgp00C5fbhfan0J4w/view?utm_content=DAGgOYcGXkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb75128c8e"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -91,7 +92,7 @@ const About = () => (
             </Link>
           </Fade>
         </LinkContainer>
-      </React.Fragment>
+      </>
     )}
   </Wrapper>
 );
