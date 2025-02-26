@@ -21,7 +21,7 @@ const Home = () => (
       </Fade>
       <Fade bottom cascade delay={1500}>
         <H3 sectionColor={props => props.theme.color.gray}>
-          Front End & Graphic Designer
+          Front End Developer
         </H3>
       </Fade>
     </NameWrapper>
