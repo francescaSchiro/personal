@@ -46,9 +46,7 @@ const Contacts = () => (
               target='_blank'
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
-            >
-              {' '}
-              Git Hub{' '}
+            >GitHub
             </LinkContacts>
           </LinkWrapper>
           <LinkWrapper>
@@ -70,7 +68,7 @@ const Contacts = () => (
               rel='noopener noreferrer'
               sectionColor={props => props.theme.color.lightBlue}
             >
-              Linked In
+              LinkedIn
             </LinkContacts>
           </LinkWrapper>
         </LinksWrapper>
@@ -103,9 +101,7 @@ const Contacts = () => (
                 target='_blank'
                 rel='noopener noreferrer'
                 sectionColor={props => props.theme.color.lightBlue}
-              >
-                {' '}
-                Git Hub{' '}
+              >GitHub
               </LinkContacts>
             </LinkWrapper>
             <LinkWrapper>
@@ -127,7 +123,7 @@ const Contacts = () => (
                 rel='noopener noreferrer'
                 sectionColor={props => props.theme.color.lightBlue}
               >
-                Linked In
+                LinkedIn
               </LinkContacts>
             </LinkWrapper>
           </LinksWrapper>
@@ -151,7 +147,7 @@ const Contacts = () => (
       </Fade>
     )}
     <Footer>
-      Francesca Schiro | Front End & Graphic Designer | All rights reserved ©
+      Francesca Schiro | Front End Developer | All rights reserved ©
       2019
     </Footer>
   </Wrapper>

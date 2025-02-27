@@ -117,14 +117,6 @@ export const cards = [
     description: `Video to highlight the eclectic spirit of the Mediterranean.`,
     more: 'https://www.behance.net/gallery/894763/Mediterraneo'
   },
-  {
-    id: 14,
-    title: '?',
-    coverUrl: 'https://404store.com/2017/08/15/4949794-random-image.jpg',
-    description:
-      'This is just a random drowning cat. Thank you for making it this far.',
-    more: 'https://404store.com/2017/08/15/4949794-random-image.jpg'
-  }
 ];
 
 

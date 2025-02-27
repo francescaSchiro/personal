@@ -5,7 +5,7 @@ To view it go to: https://francescaschiro.github.io/personal/
 
 - `git clone https://github.com/francescaSchiro/personal.git` to clone repository;
 
-- `git checkout develop` to move to develop branch;
+- `git checkout gh-pages` to move to gh-pages branch;
 
 - `yarn` to install dependencies;
 
@@ -28,7 +28,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ---
 
 ## TO DEPLOY to gh pages:
-
+on the gh-pages branch:
 `yarn run build`
+`yarn run deploy`
 
 ## [more info](https://facebook.github.io/create-react-app/docs/deployment)

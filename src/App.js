@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from './theme';
 import GlobalStyles from './theme/GlobalStyle';
 import Fade from 'react-reveal/Fade';
@@ -18,28 +18,19 @@ import Contacts from './components/Contacts/';
 
 // import { getThemeByName } from './utils';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: themes.DefaultTheme,
-      lightIcon: true
-    };
+const App = () => {
+  const [theme, setTheme] = useState(themes.DefaultTheme);
+  const [lightIcon, setLightIcon] = useState(true);
+ 
+  const switchToDefaultTheme = () => {
+    setTheme(themes.DefaultTheme);
+    setLightIcon(true);
   }
-  switchToDefaultTheme = () =>
-    this.setState({
-      theme: themes.DefaultTheme,
-      lightIcon: true
-    });
-  switchToDarkTheme = () =>
-    this.setState({
-      theme: themes.DarkTheme,
-      lightIcon: false
-    });
-
-  render() {
-    const { theme, lightIcon } = this.state;
-    return (
+  const switchToDarkTheme = () => {
+    setTheme(themes.DarkTheme);
+    setLightIcon(false);
+  }
+     return (
       <ThemeProvider theme={theme}>
         <React.Fragment>
           <GlobalStyles />
@@ -50,7 +41,7 @@ class App extends Component {
                   <NavItem
                     type='button'
                     onClick={() => scrollToSection('.homeSection')}
-                    sectionColor={props => props.theme.color.gray}
+                    sectionColor={theme.color.gray}
                     // href="/#home"
                   >
                     Home /
@@ -62,7 +53,7 @@ class App extends Component {
                       (e => e.preventDefault(),
                       () => scrollToSection('.aboutSection'))
                     }
-                    sectionColor={props => props.theme.color.yellow}
+                    sectionColor={theme.color.yellow}
                   >
                     About /
                   </NavItem>
@@ -70,7 +61,7 @@ class App extends Component {
                 <Fade left>
                   <NavItem
                     // onClick={() => scrollToSection(".worksSection")}
-                    sectionColor={props => props.theme.color.red}
+                    sectionColor={theme.color.red}
                     href='#works'
                   >
                     Works /
@@ -79,7 +70,7 @@ class App extends Component {
                 <Fade left>
                   <NavItem
                     type='button'
-                    sectionColor={props => props.theme.color.lightBlue}
+                    sectionColor={theme.color.lightBlue}
                     href='#contacts'
                   >
                     Contacts /
@@ -89,7 +80,7 @@ class App extends Component {
               <ButtonsWrapper>
                 <Fade right>
                   {lightIcon ? (
-                    <ButtonTheme onClick={this.switchToDarkTheme}>
+                    <ButtonTheme onClick={switchToDarkTheme}>
                       <i
                         className='fas fa-lightbulb'
                         alt='dark'
@@ -97,7 +88,7 @@ class App extends Component {
                       />
                     </ButtonTheme>
                   ) : (
-                    <ButtonTheme onClick={this.switchToDefaultTheme}>
+                    <ButtonTheme onClick={switchToDefaultTheme}>
                       <i className='fas fa-lightbulb' alt='light' />
                     </ButtonTheme>
                   )}
@@ -113,6 +104,5 @@ class App extends Component {
       </ThemeProvider>
     );
   }
-}
 
 export default App;
